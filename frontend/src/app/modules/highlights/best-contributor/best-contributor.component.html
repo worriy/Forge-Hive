@@ -1,0 +1,42 @@
+<div class="best contributor highlights-card-container">
+  <div *ngIf="bestContributor">
+    <div class="highlights-card-header" >
+      <div class="highlights-card_category">{{ "highlights.bestContributorTitle" | translate }}</div>
+    </div>
+    <div class="highlights-card-content" >
+      <div class="highlights-card_details">
+        <img *ngIf="bestContributor?.pictureUrl != null" class="highlights-card_profil_img" [src]="'data:image/jpeg;base64,'+bestContributor?.pictureUrl"/>
+        <div *ngIf="bestContributor?.pictureUrl == null" class="highlights-card_image--default">{{bestContributor?.firstname.charAt(0)}}</div>
+        <div class="highlights-card_title">
+          {{bestContributor?.firstname}} {{bestContributor?.lastname}}
+        </div>
+        <div class="highlights-card_subtitle">
+          <span *ngIf="bestContributor?.department != null">{{bestContributor?.department}} {{ "commons.department" | translate }}</span>
+          <span *ngIf="bestContributor?.city != null">{{bestContributor?.city}}, {{bestContributor?.country}} </span>
+        </div>
+      </div>
+    </div>
+    <div class="highlights-card-footer">
+      <div class="card-footer-wrapper">
+        <div class="report-tabs">
+          <div class="report-tab">
+            <span *ngIf="bestContributor?.posts < 2" class="report-text">{{ "posts.post" | translate }}</span>
+            <span *ngIf="bestContributor?.posts >= 2" class="report-text">{{ "posts.posts" | translate }}</span>
+            <span class="report-number">{{bestContributor?.posts}}</span>
+          </div>
+          <div class="report-tab">
+            <span *ngIf="bestContributor?.answers < 2" class="report-text">{{ "reporting.answer" | translate }}</span>
+            <span *ngIf="bestContributor?.answers >= 2" class="report-text">{{ "reporting.answers" | translate }}</span>
+            <span class="report-number">{{bestContributor?.answers}} </span>
+          </div>
+          <div class="report-tab">
+            <span *ngIf="bestContributor?.likes < 2" class="report-text">{{ "reporting.like" | translate }}</span>
+            <span *ngIf="bestContributor?.likes >= 2" class="report-text">{{ "reporting.likes" | translate }}</span>
+            <span class="report-number">{{bestContributor?.likes}} </span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

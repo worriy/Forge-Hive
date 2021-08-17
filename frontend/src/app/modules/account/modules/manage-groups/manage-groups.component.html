@@ -1,0 +1,104 @@
+<ion-content class="ManageGroups">
+    
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onReturn()" class="Toolbar__button">
+        <img src="assets/imgs/icons/left-arrow.svg" width="16px" height="16px" alt="">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <a type="submit" (click)="onShowCreateGroupModal()" class="Toolbar__button">{{ "manageGroups.add" | translate }}</a>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "manageGroups.groups" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="AppMain has-grey-bg">
+    <div class="Main" >
+        <div class="View">
+            <!-- If there's no group -->
+            <div *ngIf="groups?.length == 0 && myGroups?.length == 0; then emptyGroup"></div> 
+            <ng-template #emptyGroup>
+              <div class="highlights container ion-margin-top">
+                <div class="highlights-item">
+                  <div class="report highlights-card-container">
+                    <div class="highlights-card-header">
+                      <div class="highlights-card_category">{{ "manageGroups.noGroups" | translate }}</div>
+                    </div>
+                    <div class="highlights-card-content">
+                      <div class="highlights-card_details">
+                        <div class="highlights-card_title">
+                            {{ "manageGroups.notMemberYet" | translate }}
+                        </div>
+                      </div>
+                      <button class="button" ion-button full (click)="onShowCreateGroupModal()">{{ "manageGroups.create" | translate }}</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+        </div>
+      <div class="View" *ngIf="groups?.length > 0 ">
+        <div *ngIf="groups?.length > 0; then fullGroups"></div> 
+        <ng-template #fullGroups>
+          <h3>{{ "manageGroups.myGroups" | translate }}</h3>
+          <ul class="List List__noborder">
+            <div *ngFor="let group of groups">                            
+              <li tappable class="List__item" *ngIf="group?.name.toUpperCase() != 'PUBLIC' && group?.name">
+                <div class="List__item--center" (click)="onToGroupDetails(group)">
+                  <div class="List__item--title">{{group.name}}</div>
+                  <div class="List__item--subtitle">
+                    <span *ngIf="group.numberMembers > 1">{{group.numberMembers}} {{ "manageGroups.members" | translate }} </span>
+                    <span *ngIf="group.numberMembers <= 1">{{group.numberMembers}} {{ "manageGroups.member" | translate }}</span>
+                    <span>{{group.city}}</span>
+                    <span>{{group.country}}</span>
+                  </div>
+                </div>
+                <div class="List__item--right">
+                    <div tappable class="List__item--icon" (click)="onPresentOptionsDeleteGroupMenu(group)">
+              
+                    <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+                  </div>
+                </div>
+
+              </li>
+            </div>
+          </ul>
+        </ng-template>
+      </div>
+
+      <!-- If there's no group -->
+        <div class="View" *ngIf="myGroups?.length > 0">
+          <h3>{{ "manageGroups.otherGroups" | translate }}</h3>
+          <ul class="List List__noborder">
+            <div *ngFor="let myGroup of myGroups">                            
+              <li tappable class="List__item" *ngIf="myGroup?.name.toUpperCase() != 'PUBLIC' && myGroup?.name">
+                <div class="List__item--center" (click)="onToGroupDetails(myGroup)">
+                  <div class="List__item--title">{{myGroup.name}}</div>
+                  <div class="List__item--subtitle">
+                    <span *ngIf="myGroup.numberMembers > 1">{{myGroup.numberMembers}} {{ "manageGroups.members" | translate }}</span>
+                    <span *ngIf="myGroup.numberMembers <= 1">{{myGroup.numberMembers}} {{ "manageGroups.member" | translate }}</span>
+                    <span>{{myGroup.city}}</span>
+                    <span>{{myGroup.country}}</span>
+                  </div>
+                </div>
+                <div class="List__item--right">
+                  <div tappable class="List__item--icon" (click)="onPresentOptionsLeaveGroupMenu(myGroup)">
+                    <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+</ion-content>

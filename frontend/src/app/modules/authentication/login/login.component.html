@@ -1,0 +1,40 @@
+<ion-content class="app is-fullheight">
+  <div class="login has-main-color-bg">
+    <div class="login-container">
+      <div class="login-content">
+        <div class="login-title">
+          <span>Hive</span>
+        </div>
+        <form class="login-form" [formGroup]="authForm" *ngIf="authForm">
+          <div class="field">
+            <span class="label">
+              <ion-icon name="mail"></ion-icon>
+              <ion-input class="input" formControlName="email" type="email" placeholder="{{'commons.email' | translate}}"></ion-input>
+            </span>
+          </div>
+          <ion-label class="errorMessage" *ngIf="authForm?.controls?.email.touched && !authForm?.controls?.email.valid">
+            Invalid Email.
+          </ion-label>
+
+          <div class="field">
+            <span class="label">
+              <ion-icon name="key"></ion-icon>
+              <ion-input class="input" formControlName="password" type="password" placeholder="{{'commons.password' | translate}}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm?.controls?.password?.touched && authForm?.controls?.password?.hasError('required')">
+            Password is required.
+          </ion-label>
+          <button class="button is-primary" [disabled]="authForm.invalid" (click)="onLogin(email,password)">{{ "login.mainLayoutLoginAction" | translate }}</button>
+        </form>
+        <div class="login-link">
+          <a (click)="onToForgotPassword()">{{"login.mainLayoutToForgotPasswordAction" | translate}}</a>
+        </div>
+        <div>
+          <p>Don't have an account? <a (click)="onToRegister()">{{"login.createAccount" | translate}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

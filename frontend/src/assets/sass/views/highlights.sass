@@ -1,0 +1,261 @@
+.highlights
+  margin-bottom: 4em
+  .highlights-item
+    &:not(:last-child)
+      margin-bottom: 32px
+    &__inset
+      padding: 0 16px
+
+.highlights-card-container   
+  width: 100%
+  display: flex
+  flex-grow: 2
+  justify-content: space-between
+  flex-direction: column
+  border-radius: 9px
+  overflow: hidden
+  background: white
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 15px 20px 0 rgba(0,0,0,0.1)
+
+    // If the card has a background color
+  &.has-bg-color
+    // Top
+    .highlights-card-header
+      position: absolute
+      z-index: 1
+      color: white
+     
+      .highlights-card_category
+        color: white
+    // Content    
+    .highlights-card-content
+      .highlights-card_details
+        z-index: 1
+        position: absolute
+        bottom: 0
+        color: white  
+
+  // Header  
+  .highlights-card-header
+    display: flex
+    align-content: center
+    align-items: center
+    padding: 0 1.5em
+    height: 54px
+    +small-screen
+      height: 46px
+    &.absolute
+      position: absolute
+      z-index: 1
+    .highlights-card_category
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 0.875em
+
+  // Content    
+  .highlights-card-content
+    display: flex
+    flex-grow: 1
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    overflow: hidden
+    .highlights-card_image
+      position: relative
+      flex-grow: 2
+      // background-color: $second-color
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+    .highlights-card_profil_img
+      width: 82px
+      height: 82px
+      margin-bottom: .5em
+      border-radius: 6px
+      border: 2px solid white
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+    .highlights-card_image--default
+      width: 82px
+      height: 82px
+      margin-bottom: .5em
+      border-radius: 6px
+      color: $main-color
+      text-align: center
+      background-color: white
+      line-height: 82px
+      font-size: 42px
+      font-weight: bold
+    .highlights-card_details
+      padding: 24px
+      +small-screen
+        padding: 18px
+      +large-screen
+        padding: 24px
+      .highlights-card_title
+        font-size: 1.8em
+        line-height: 1
+        font-weight: bold
+        +small-screen
+          font-size: 1.5em
+        +large-screen
+          font-size: 1.75em  
+      .highlights-card_subtitle
+        opacity: 0.7
+        font-size: 12px
+        display: flex
+        flex-wrap: wrap
+        margin-top: 1em
+        line-height: 1.2
+        span
+          &:nth-child(1n+2)
+            &:before
+              content: '•'
+              margin-left: 2px
+              padding-left: 2px
+              padding-right: 4px
+
+  // FOOTER      
+  .highlights-card-footer
+    display: flex
+    align-content: center
+    width: 100%
+
+
+  // If the highlights-card has a background image
+  &.has-bg-img
+    // Header
+    .highlights-card-header
+      position: absolute
+      z-index: 1
+      .highlights-card_category
+        color: white
+    // Content    
+    .highlights-card-content
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      position: relative
+      @include dark-overlay
+      &:after
+        background-image: linear-gradient(-180deg, rgba(0,0,0,0.25) 48%, rgba(0,0,0,0.75) 100%)
+        z-index: 0
+      .highlights-card_details
+        z-index: 1
+        position: absolute
+        bottom: 0
+        color: white
+
+  // If the highlights-card has a background color
+  &.has-bg-color
+    // Top
+    .highlights-card-header
+      position: absolute
+      z-index: 1
+      .highlights-card_category
+        color: white
+    // Content    
+    .highlights-card-content
+      .highlights-card_details
+        z-index: 1
+        position: absolute
+        bottom: 0
+        color: white       
+
+
+
+
+.report.highlights-card-container
+  .highlights-card-header
+    border-bottom: 1px solid #E5E5EA
+    .highlights-card_category
+        color: $second-color
+  .highlights-card-content
+    justify-content: flex-start
+    .highlights-card_details
+      padding: 16px 24px
+      flex-grow: 0
+      align-content: center
+      .highlights-card_title
+        font-size: 17px
+        line-height: 1.2
+    .report-container
+      width: 100%
+      display: flex
+      flex-grow: 2
+      .report-content
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        .report-answers
+          display: flex
+          flex-direction: column
+          padding: 16px 0
+          .report-answer
+            width: 100%
+            padding: 12px 0
+            display: flex
+            align-content: center
+            align-items: baseline
+            justify-content: space-between
+            &:not(:last-child)
+              border-bottom: 1px solid #E5E5EA
+            .report-text
+              font-size: 1em
+            &:first-child
+              .report-text,.report-number
+                font-weight: bold
+                color: $second-color
+      &.progress
+        .circular-progress
+          +small-screen
+            width: 100px
+            height: 100px
+            margin: 1em auto
+            &::before
+              font-size: 1.5em
+              line-height: 100px
+          +large-screen
+            width: 200px
+            height: 200px
+            &::before
+              font-size: 2em
+              line-height: 200px
+        .report-content
+          .report-answers
+            flex-direction: row          
+            .report-answer
+              width: 100%
+              display: flex
+              align-content: center
+              align-items: baseline
+              justify-content: center
+              border: 0
+              .report-color
+                display: block
+                width: 8px
+                height: 8px
+                border-radius: 60px
+                margin-right: 4px
+                &.pink
+                  background-color: $second-color
+                &.grey
+                  background-color: #E0E0E0
+              .report-text
+                font-size: 13px
+                font-weight: bold
+
+.highlights-item
+  .List
+    .List__item--center
+      .List__item--subtitle
+        span
+            text-transform: capitalize
+            &:nth-child(1n+2)
+              &:before
+                content: '•'
+                padding-left: 2px
+                padding-right: 4px

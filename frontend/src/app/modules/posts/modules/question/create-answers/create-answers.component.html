@@ -1,0 +1,34 @@
+
+<!-- Main -->
+<form class="form" [formGroup]="answersForm">
+  <div class="main">
+    <div class="new-post-step">
+      <div class="new-post-step-content">
+        <div class="container">
+          
+          <div class="control" style="padding-bottom: 50px">
+            <div *ngFor="let i of numberAnswers;">
+              <ion-item *ngIf="i < count_answers">
+                <ion-label floating>{{'question.answer' | translate}} {{i+1}}</ion-label>
+                <ion-input formControlName="answer{{i+1}}" type="text" name="answer{{i+1}}"></ion-input>
+              </ion-item>
+            </div>
+            <button class="button" (click)="onAddNumberAnswers()" *ngIf="visibleAdd">{{ "question.add" | translate }}</button>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+  <!-- Footer -->
+<!--
+  // TODO: Use when fixing survey
+  <ion-footer style="position: fixed">
+  <div class="new-post-step-footer">
+    <div class="two-buttons">
+      <!--If the question is a question of a Survey
+      <div *ngIf="isSurvey == true" tappable class="button" (click)="onToAnotherquestionSurvey()">{{ "question.next" | translate }}</div>
+    </div>
+  </div>
+</ion-footer> -->

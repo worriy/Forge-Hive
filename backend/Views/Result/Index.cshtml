@@ -1,0 +1,53 @@
+
+@model IEnumerable<Hive.Backend.DataModels.Result>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Result Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+				<th>
+            @Html.DisplayNameFor(m => m.Id)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.Value)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.ChoiceId)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.ReportingId)
+        </th>
+		        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+				<th>
+            @Html.DisplayFor(modelItem => item.Id)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.Value)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.ChoiceId)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.ReportingId)
+        </th>
+		        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

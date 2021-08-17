@@ -1,0 +1,144 @@
+<div *ngIf="alreadyAnswered == true || alreadyAnswered == null; then showReport else showCard"></div>
+  
+<!--<div *ngIf="alreadyAnswered == null || alreadyAnswered == true">-->
+<ng-template #showReport>
+  <div class="report modal-card-container">
+    <div class="modal-card-header">
+      <div class="modal-card_category">{{ "reporting.reportCategory" | translate }}</div>
+      <div tappable class="modal-card_close" (click)="onCloseModal()">{{ "commons.close" | translate }}</div>
+    </div>
+    <div class="modal-card-content" *ngIf="card?.type == 'Survey'" [ngStyle]="{ 'background-image': 'url(data:image/png;base64,' + card?.picture + ')'}">
+      <!-- Card details -->
+      <div class="modal-card_details">
+        <!-- Title -->
+        <div class="modal-card_title">
+          {{ card?.content }}
+        </div>
+        <!-- Subtitle -->
+        <div class="modal-card_subtitle">
+          <span>{{ "commons.authorPreText" | translate }}  {{ card?.author }}</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--     Not Survey Card -->
+    <div class="modal-card-content" *ngIf="card?.type != 'Survey'" >
+      <!-- Card details -->
+      <div class="modal-card_details">
+        <!-- Title -->
+        <div class="modal-card_title">
+          {{ card?.content }}
+        </div>
+        <!-- Subtitle -->
+        <div class="modal-card_subtitle">
+          <span>{{ "commons.authorPreText" | translate }}  {{ card?.author }}</span>
+        </div>
+        
+        <div class="report-container progress">
+          <div class="report-content" *ngIf="card?.answers > 0">
+            <canvas #doughnutCanvas ></canvas>
+            <div class="report-answers" >
+              <div class="report-answer" *ngFor="let value of values" >
+                <span class="report-color " [ngStyle]="{'background-color': value.color}"></span>
+                <span class="report-text" style="color: #000;">{{value.result.choice.name}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content" *ngIf="card?.answers == 0">
+          <div class="card_details">
+            <div class="report-container">
+              <div class="report-content">
+                <div class="report-answers">
+                  <div class="report-answer" *ngFor="let result of card.results">
+                    <span class="report-text">{{result.choice.name}}</span>
+                    <span class="report-number">{{result.value}}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="modal-card-footer">
+      <div class="card-footer-wrapper">
+
+        <div class="report-tabs">
+          <div class="report-tab">
+            <span class="report-text">{{ "reporting.views" | translate }}</span>
+            <span class="report-number">{{ card?.views }}</span>
+          </div>
+          <div class="report-tab">
+            <span class="report-text">{{ "reporting.answers" | translate }}</span>
+            <span class="report-number">{{ card?.answers }}</span>
+          </div>
+          <div class="report-tab">
+            <span class="report-text">{{ "reporting.likes" | translate }}</span>
+            <span class="report-number">{{ card?.likes }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!--<div *ngIf="alreadyAnswered == false">-->
+<ng-template #showCard>
+    <div *ngIf="endIdeaCard >= date; then showCardToAnswer else showReport"></div>
+  <ng-template #showCardToAnswer>
+    <div class="modal-card-container">
+        <div class="modal-card-header">
+            <div class="modal-card_category">{{ card?.type | translate }} </div>
+            <div tappable class="modal-card_close" (click)="onCloseModal()">{{ "commons.close" | translate }}</div>
+          </div>
+      <div class="modal-card-content">
+        <img #pictureBase64 class="modal-card_image" [src]="'data:image/jpeg;base64,' + card?.picture" />
+        <div class="modal-card_details">
+          <div class="modal-card_title">
+            {{ card?.content }}
+          </div>
+          <div class="modal-card_subtitle">
+            <span>{{ "commons.authorPreText" | translate }} {{ card?.author }}</span>
+            <span>{{ "commons.endDatePreText" | translate }} {{ endIdeaCard | date:'MMMM dd, yyyy' }}</span>
+            <span>{{ card.targetGroups }}</span>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="modal-card-footer">
+          <div class="card-footer-wrapper">
+            <!-- ANSWERS -->
+            <div class="two-buttons" *ngIf="card.type == 'Idea'">
+              <div tappable class="button" (click)="onAgree(card?.results[0]?.choice?.id)">{{ "idea.yes" | translate}}</div>
+              <div tappable class="button" (click)="onDisagree(card?.results[1]?.choice?.id)">{{ "idea.no" | translate}}</div>
+            </div>
+
+            <div class="multi-buttons" *ngIf="card.type == 'Question'">
+              <div class="buttons_container" >
+                <div class="button-item" *ngFor="let result of card.results;" (click)="onAnswer(result.choice.id)">{{result.choice.name }}</div>
+              </div>
+            </div>
+
+            <div class="two-buttons" *ngIf="card.type == 'Event'">
+                <div tappable class="button" (click)="onApplause(card?.results[0]?.choice?.id)">
+                  <img src="assets/imgs/icons/clapping.svg" width="20" height="20" style="margin-right:3%;" >
+                  {{"event.applause" | translate}}
+                </div>
+              </div>
+
+              <div class="two-buttons" *ngIf="card.type == 'Survey'">
+                <div tappable class="button" (click)="onStartSurvey()">
+                  {{"survey.startSurvey" | translate}}
+                </div>
+              </div>
+
+          </div>
+        </div>
+    </div>
+  </ng-template>
+</ng-template>

@@ -1,0 +1,84 @@
+<ion-content class="app is-fullheight">
+  <div class="register has-main-color-bg">
+    <div class="login-container">
+      <div class="login-content">
+        <div class="login-title">
+          <span>Hive</span>
+        </div>
+        <form class="login-form" [formGroup]="authForm">
+          <div class="field"  >
+            <span class="label">
+              <ion-icon name="person"></ion-icon>
+              <ion-input formControlName="firstName" type="text" placeholder="{{'account.firstName' | translate}}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm.controls.firstName.touched && authForm.controls.firstName.hasError('required')">
+            Firstname is required.
+          </ion-label>
+
+          <div class="field">
+            <span class="label">
+              <ion-icon name="person"></ion-icon>
+              <ion-input formControlName="lastName" type="text" placeholder="{{'account.lastName' | translate}}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm.controls.lastName.touched && authForm.controls.lastName.hasError('required')">
+            Lastname is required.
+          </ion-label>
+
+          <div class="field">
+            <span class="label">
+              <ion-icon name="mail"></ion-icon>
+              <ion-input formControlName="email" type="email" placeholder="{{'commons.email' | translate}}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm.controls.email.touched && authForm.controls.email.hasError('required')">
+            Email is required.
+          </ion-label>
+
+          <ion-label class='errorMessage' *ngIf="email?.length > 0 && authForm.controls.email.touched && !authForm.controls.email.valid">
+            Invalid Email.
+          </ion-label>
+
+          <div class="field">
+            <span class="label">
+              <ion-icon name="key"></ion-icon>
+              <ion-input formControlName="password" class="input" type="password" placeholder="{{ 'account.password' | translate }}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm.controls.password.touched && authForm.controls.password.hasError('required')">
+            Password is required.
+          </ion-label>
+
+          <ion-label class='errorMessage' *ngIf="password?.length > 0 && authForm.controls.password.touched && !authForm.controls.password.valid">
+            Password should be between 6 ans 12 characters<br>
+            and contain at least one number, one capital letter, <br>
+            one small letter and one special character.
+          </ion-label>
+
+          <div class="field">
+            <span class="label">
+              <ion-icon name="key"></ion-icon>
+              <ion-input formControlName="confirmPassword" class="input" type="password" placeholder="{{ 'account.confirmPassword' | translate }}"></ion-input>
+            </span>
+          </div>
+
+          <ion-label class='errorMessage' *ngIf="authForm.controls.confirmPassword.touched && authForm.hasError('mismatchedPasswords')">
+            Passwords do not match
+          </ion-label>
+
+          <button class="button is-primary" [disabled]="authForm.invalid" (click)="onCreateAccount(firstName, lastName, email, password, confirmPassword)">{{'login.create' | translate}}</button>
+        </form>
+        
+        <div class="login-help"></div>
+        <div class="login-link">
+          <a (click)="onToLogin()">{{ "login.mainLayoutLoginAction" | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

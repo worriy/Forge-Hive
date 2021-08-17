@@ -1,0 +1,78 @@
+<ion-content>
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onCancel()" class="Toolbar__button">
+          <img src="assets/imgs/icons/close-white.svg" alt="" width="16px" height="16px">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <button tappable [disabled]="!groupForm.valid" type="submit" class="Toolbar__button" (click)="onSave()">{{ "manageGroups.createGroupModalLayoutSaveAction" | translate }}</button>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "manageGroups.create" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="AppMain has-grey-bg">
+    <div class="Main">
+      <div class="View flex__grow--auto">
+
+        <form *ngIf="groupForm" [formGroup]="groupForm">
+          <ion-item [ngClass]="{'error-border': !groupForm.controls.name.valid && groupForm.controls.name.touched}">
+            <ion-label position="floating">{{ "manageGroups.name" | translate }}</ion-label> 
+            <ion-input formControlName="name" type="text" class="style-input" name="name"></ion-input>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.name.errors?.required && groupForm.controls.name.touched">
+            <p class="alert-danger">{{ "manageGroups.groupNameRequired" | translate }}</p>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.name.errors?.pattern && groupForm.controls.name.touched">
+            <p class="alert-danger">{{ "manageGroups.groupNameAllowed" | translate }}</p>
+          </ion-item>   
+      
+          <ion-item *ngIf="groupForm.controls.name.errors?.minlength && groupForm.controls.name.touched">
+            <p class="alert-danger">{{ "manageGroups.groupNameMinLength" | translate }}</p>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.name.errors?.maxlength && groupForm.controls.name.touched">
+            <p class="alert-danger">{{ "manageGroups.groupNameMaxLength" | translate }}</p>
+          </ion-item>
+      
+          <ion-item [ngClass]="{'error-border':!groupForm.controls.city.valid && groupForm.controls.city.touched}">
+            <ion-label position="floating">{{ "manageGroups.city" | translate }}</ion-label> 
+            <ion-input formControlName="city" class ="style-input" type ="text" name="city" ></ion-input>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.city.errors?.required && groupForm.controls.city.touched">
+            <p  class = "alert-danger">{{ "manageGroups.cityNameRequired" | translate }}</p>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.city.errors?.pattern && groupForm.controls.city.touched">
+            <p class="alert-danger">{{ "manageGroups.cityNameAllowed" | translate }}</p>
+          </ion-item>  
+      
+          <ion-item [ngClass]="{'error-border': !groupForm.controls.country.valid && groupForm.controls.country.touched}">
+            <ion-label position="floating">{{ "manageGroups.country" | translate }}</ion-label>
+            <ion-input formControlName="country" type ="text" class ="style-input"  name ="country"></ion-input>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.country.errors?.required && groupForm.controls.country.touched" >
+            <p class="alert-danger">{{ "manageGroups.countryNameRequired" | translate }}</p>
+          </ion-item>
+      
+          <ion-item *ngIf="groupForm.controls.country.errors?.pattern && groupForm.controls.country.touched">
+            <p class="alert-danger">{{ "manageGroups.countryNameAllowed" | translate }}</p>
+          </ion-item>  
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

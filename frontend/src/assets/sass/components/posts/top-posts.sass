@@ -1,0 +1,125 @@
+// In Carousel view style
+.top-posts-carousel
+  width: 100%
+  .top-posts-title
+    display: flex
+    align-items: flex-end
+    line-height: 1em
+    font-size: 11px
+    font-weight: bold
+    text-transform: uppercase
+    color: white
+    padding: 0 24px 16px
+  .top-posts-container
+    overflow-x: auto
+    overflow-y: hidden
+    -webkit-overflow-scrolling: touch
+  .top-posts-list
+    width: max-content
+    display: flex
+    padding: 0 16px 16px 16px
+    overflow: visible
+    .top-post
+      display: flex
+      flex-direction: column
+      width: 278px
+      height: 192px
+      border-radius: 6px
+      overflow: hidden
+      background-color: #fff
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1)
+      margin-right: 1em
+      +small-screen
+        width: 256px
+      &-image
+        flex-grow: 2
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+      &-content
+        margin: 16px
+        text-overflow: ellipsis
+        overflow: hidden
+      &-title
+        font-size: 13px
+        font-weight: bold
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+      &-subtitle
+        color: grey
+        font-size: 11px
+        line-height: normal
+        margin-top: 4px
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+        span
+          text-transform: capitalize
+          &:nth-child(1n+2)
+            &:before
+              content: '•'
+              margin-left: 2px
+              padding-left: 2px
+              padding-right: 4px
+
+
+// In listing view style
+.top-posts-listing
+  width: 100%
+  .top-posts-title
+    display: flex
+    align-items: flex-end
+    line-height: 1em
+    font-size: 11px
+    font-weight: bold
+    text-transform: uppercase
+    color: black
+    padding: 12px 0
+  .top-posts-container
+    .top-posts-list
+      display: flex
+      flex-direction: column
+      &:not(:last-child)
+        border-bottom: 1px solid #E5E5EA
+      .top-post
+        display: flex
+        align-items: center
+        width: 100%
+        background-color: #fff
+        &:not(:last-child)
+          border-bottom: 1px solid $light-grey
+        &-image
+          min-width: 48px
+          max-width: 48px
+          height: 48px
+          border-radius: 6px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+        &-content
+          margin: 16px
+          text-overflow: ellipsis
+          overflow: hidden
+        &-title
+          font-size: 15px
+          font-weight: bold
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+        &-subtitle
+          opacity: 0.7
+          font-size: 11px
+          line-height: 1.2
+          margin-top: 4px
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          span
+            &:nth-child(1n+2)
+              &:before
+                content: '•'
+                // margin-left: 2px
+                // padding-left: 2px
+                padding-right: 4px          
+

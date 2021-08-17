@@ -1,0 +1,68 @@
+<div *ngIf="bestPost; then showBestPost else createPost "></div>
+<ng-template #showBestPost>
+  <div class="highlights-item">
+    <div class="report highlights-card-container">
+      <div class="highlights-card-header">
+        <div class="highlights-card_category">{{ "reporting.reportCategory" | translate }}</div>
+      </div>
+      <div class="highlights-card-content">
+        <div class="highlights-card_details">
+          <div class="highlights-card_title">
+            {{ bestPost?.content }}
+          </div>
+          <div class="highlights-card_subtitle">
+            <span>by {{ bestPost?.author }}</span>
+          </div>
+
+          <div class="report-container progress">
+              <div class="report-content">
+                  <canvas #doughnutCanvas id="doughnutCanvas" ></canvas>
+              <div class="report-answers" >
+                <div class="report-answer" *ngFor="let value of values" >
+                <span class="report-color " [ngStyle]="{'background-color': value.color}"></span>
+                  <span class="report-text" style="color: #000;">{{value.result.choice.name}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="highlights-card-footer">
+        <div class="card-footer-wrapper">
+          <div class="report-tabs">
+            <div class="report-tab">
+              <span *ngIf="bestPost?.views < 2" class="report-text">{{ "reporting.view" | translate }}</span>
+              <span *ngIf="bestPost?.views >= 2" class="report-text">{{ "reporting.views" | translate }}</span>
+              <span class="report-number">{{ bestPost?.views }}</span>
+            </div>
+            <div class="report-tab">
+              <span *ngIf="bestPost?.answers < 2" class="report-text">{{ "reporting.answer" | translate }}</span>
+              <span *ngIf="bestPost?.answers >= 2" class="report-text">{{ "reporting.answers" | translate }}</span>
+              <span class="report-number">{{ bestPost?.answers }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #createPost>
+  <div class="report highlights-card-container">
+    <div class="highlights-card-header">
+      <div class="highlights-card_category">{{ "posts.beBestPost" | translate }}</div>
+    </div>
+    <div class="highlights-card-content">
+      <div class="highlights-card_details">
+        <div class="highlights-card_title">
+          {{ "posts.beBestPostMessage" | translate }}
+        </div>
+      </div>
+    </div>
+    <div class="highlights-card-footer">
+      <button class="button" (click)="onToPosts()">{{ "posts.create" | translate }}</button>
+    </div>
+  </div>
+</ng-template>

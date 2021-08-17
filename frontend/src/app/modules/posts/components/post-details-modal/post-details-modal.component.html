@@ -1,0 +1,137 @@
+<ion-content class="app">
+  <div class="header header-small has-white-bg">
+    <div class="header-left">
+      <div tappable class="goback" (click)="onCloseModal() ">
+        <img src="assets/imgs/icons/chevron-left-black.svg" width="32px" height="32px">
+      </div>
+      <div class="view_title">{{ "posts.post" | translate }}</div>
+    </div>
+    <div class="header-center">
+      <div class="view_title">{{ "posts.post" | translate }}</div>
+    </div>
+    <div class="header-right">
+      <div class="header-item">
+        <a (click)="onPresentOptionsMenu()">
+          <img src="assets/imgs/icons/dots-horizontal-rounded.svg" width="32px" height="32px" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Main -->
+  
+  <div >
+    <div class="main" >
+      <div class="post">
+        <div class="post-top">
+          <div class="post-category" *ngIf="post">{{onGetType(post)}} </div>
+          <div class="post-title"><h1>{{ post?.content }}</h1></div>
+          <div class="post-details">
+            <div class="post-details-availability {{ statusForDesign }}">{{ status }}</div>
+            <div class="post-details-date-audience">
+              <span>{{ "commons.endDatePreText" | translate }} {{ post?.endDate | date:'MMMM dd, yyyy' }}</span>
+              <span>{{ post?.targetGroups }}</span>  
+            </div>
+          </div>
+        </div>
+        <div class="post-separator"></div>  
+        <div class="post-report">
+
+          <div class="report-container progress" >
+            <div class="report-content" *ngIf="post?.type != 'Survey' && post?.answers != 0" >
+              <canvas #doughnutCanvas></canvas>
+              <div>
+                <div class="report-answers" >
+                  <div class="report-answer" *ngFor="let value of values" >
+                    <span class="report-color " [ngStyle]="{'background-color': value.color}"></span>
+                    <span class="report-text" style="color: #000;">{{value.result.choice.name}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-content" *ngIf="post?.type != 'Survey' && post?.answers == 0">
+            <div class="card_details">
+              <div class="report-container">
+                <div class="report-content">
+                  <div class="report-answers">
+                    <div class="report-answer" *ngFor="let result of post.results">
+                      <span class="report-text">{{result.choice.name}}</span>
+                      <span class="report-number">{{result.value}}%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!--If the Post is Survey-->
+            <div *ngIf="post?.type == 'Survey'">
+              
+              <div *ngFor="let questionSurvey of questionsSurvey">
+
+                <!--<div class="report-container progress" >
+                  <div class="report-content" *ngIf="questionSurvey?.answers != 0" >
+                    <canvas #doughnutCanvas></canvas>
+                    <div>
+                      <div class="report-answers" >
+                        <div class="report-answer" *ngFor="let value of values" >
+                          <span class="report-color " [ngStyle]="{'background-color': value.color}"></span>
+                          <span class="report-text" style="color: #000;">{{value.result.choice.name}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+
+                <!-- If the answers == 0 -->
+                <div class="card-content" >
+                  <div class="card_details">
+                    <div class="report-container">
+                      <div class="report-content">
+                        <div class="report-answers">
+                          <div class="post-title"><h2>{{ questionSurvey?.content }}</h2></div>
+                          <div class="report-answer" *ngFor="let result of questionSurvey.results">
+                            <span class="report-text">{{result.choice.name}}</span>
+                            <span class="report-number">{{result.value}}%</span>
+                          </div>
+                          <div class="post-separator"></div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--End-->
+          <div class="report-tabs">
+            <div class="report-tab">
+              <span *ngIf="post?.views < 2" class="report-text">{{ "reporting.view" | translate }}</span>
+              <span *ngIf="post?.views >= 2" class="report-text">{{ "reporting.views" | translate }}</span>
+              <span class="report-number">{{ post?.views }}</span>
+            </div>
+
+            <div class="report-tab" *ngIf="post?.type != 'Quote' && post?.type != 'Suggestion'">
+              <span *ngIf="post?.answers < 2" class="report-text">{{ "reporting.answer" | translate }}</span>
+              <span *ngIf="post?.answers >= 2" class="report-text">{{ "reporting.answers" | translate }}</span>
+              <span class="report-number">{{ post?.answers }}</span>
+            </div> 
+
+            <div class="report-tab">
+              <span *ngIf="post?.likes < 2" class="report-text">{{ "reporting.like" | translate }}</span>
+              <span *ngIf="post?.likes >= 2" class="report-text">{{ "reporting.likes" | translate }}</span>
+              <span class="report-number">{{ post?.likes }}</span>
+            </div> 
+
+          </div>
+        </div>
+
+        <div class="post-image">
+          <img #pictureBase64 width="100%" height="300px" class="top-post-image" [src]="'data:image/jpeg;base64,'+post?.picture"/>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>

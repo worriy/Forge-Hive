@@ -1,0 +1,80 @@
+.tabs
+  display: flex
+  width: 100%
+  position: relative
+  justify-content: center
+  align-items: stretch
+  border-bottom: 1px solid $light-grey
+  //background-color: #333
+  //overflow: auto
+  //white-space: nowrap
+  .tab
+    display: flex
+    overflow: hidden
+    flex: 1
+    flex-direction: column
+    align-items: center
+    align-self: center
+    justify-content: center
+    user-select: none
+    cursor: pointer
+    text-decoration: none
+    border: 0
+    font-size: 13px
+    line-height: 2em
+    //display: inline-block
+    //color: white
+    //text-align: center
+    //padding-left: 2%
+    //padding-right: 2%
+    //text-decoration: none
+    &.is-active
+      font-weight: bold
+      color: $main-color
+      border-bottom: 2px solid $main-color
+    &.disabled
+      opacity: 0.5
+      cursor: default
+      pointer-events: none
+
+.posts
+  width: 100%
+  .posts-list
+    &-item
+      height: 64px
+      &-content
+        padding: 16px 24px
+        text-overflow: ellipsis
+        overflow: hidden
+        position: relative
+        border-bottom: 1px solid $light-grey
+        &-left
+          margin-right: 48px
+        &-right
+          position: absolute
+          width: 16px
+          height: 24px
+          right: 16px
+          top: 24px
+        &_title
+          font-size: 13px
+          font-weight: 600
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+        &_subtitle
+          opacity: 0.7
+          font-size: 10px
+          line-height: normal
+          margin-top: 4px
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          span
+            text-transform: capitalize
+            &:nth-child(1n+2)
+              &:before
+                content: '•'
+                margin-left: 2px
+                padding-left: 2px
+                padding-right: 4px

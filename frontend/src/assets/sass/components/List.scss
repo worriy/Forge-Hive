@@ -1,0 +1,417 @@
+/*==============================
+=              List            =
+================================
+• List
+••• Title
+••• Caption
+• Item
+••• Left Item
+••• Center Item
+••• Right Item
+••• Header
+••• Title
+••• Subtitle
+••• Without Border
+••• Tappable
+••• Inset
+••• Label
+••• Thumbnail
+••• Icon
+••• Chevron
+••• Long Divider
+••• No Padding
+••• No Divider
+===============================*/
+$ListBgColor: white !default;
+$ListBorderColor: #e9e9e9 !default;
+$ListShadow: 0 .1em .2em .1em rgba(0,0,0,.1) !default;
+$ListTitleColor: black !default;
+$ListTitleBgColor: transparent !default;
+$ListTitlePadding: 4px 16px !default;
+$ListItemHeight: 54px !default;
+$ListItemColor: black !default;
+$ListItemTitleColor: black !default;
+$ListItemTitleWeight: 600 !default;
+$ListItemSubtitleColor: grey !default;
+$ListItemBorderColor: lightgrey !default;
+$ListLabelColor: black !default;
+$ListHeaderHeight: 2em !default;
+$ListHeaderColor: black !default;
+$ListHeaderBgColor: #F8F8F8 !default;
+$ListThumbnailRadius: 4px !default;
+$ListInsetRadius: 4px !default;
+$ListChevronColor: black !default;
+
+.List {
+  padding: 0;
+  margin: 0;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  user-select: none;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  background-image: linear-gradient($ListBorderColor, $ListBorderColor),
+    linear-gradient($ListBorderColor, $ListBorderColor);
+  background-size: 100% 1px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  background-color: $ListBgColor;
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .List {
+    background-image: linear-gradient(
+        0deg,
+        $ListBorderColor,
+        $ListBorderColor 50%,
+        transparent 50%
+      ),
+      linear-gradient(
+        180deg,
+        $ListBorderColor,
+        $ListBorderColor 50%,
+        transparent 50%
+      );
+  }
+}
+
+// -> Title
+//***************
+.List__title {
+  box-sizing: border-box;
+  padding: $ListTitlePadding;
+  margin: 0;
+  font-weight: bold;
+  line-height: 2;
+  color: $ListTitleColor;
+  text-align: left;
+  background: $ListTitleBgColor;
+  border: none;
+  cursor: default;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @extend .text-style-subhead !optional;
+  &.noPadding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// -> Caption
+//****************
+.List__caption {
+  padding: 1em;
+  line-height: 1.2;
+  opacity: .5;
+  @extend .text-style-footnote !optional;
+}
+
+// -> Item
+//*******************
+.List__item {
+  color: $ListItemColor;
+  width: 100%;
+  position: relative;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 1em;
+  margin: 0 0 -1px 0;
+  transition: background-color 0.2s linear;
+  @extend .text-style-subhead !optional;
+}
+
+// -> Left Item
+//*******************
+.List__item--left {
+  box-sizing: border-box;
+  display: flex;
+  padding: 12px 0.75em 12px 0;
+  order: 0;
+  align-items: center;
+  align-self: stretch;
+  line-height: 1.2em;
+  min-height: $ListItemHeight;
+  color: inherit;
+  &:empty {
+    width: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// -> Center Item
+//*******************
+.List__item--center {
+  padding: 1em 0.5em 1em 0;
+  min-height: $ListItemHeight;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  order: 1;
+  margin-right: auto;
+  align-self: stretch;
+  align-items: center;
+  margin-left: 0;
+  color: inherit;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(
+    0deg,
+    $ListItemBorderColor,
+    $ListItemBorderColor 100%
+  );
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .List__item--center {
+    background-image: linear-gradient(
+      0deg,
+      $ListItemBorderColor,
+      $ListItemBorderColor 50%,
+      transparent 50%
+    );
+  }
+}
+
+// -> Right Item
+//*******************
+.List__item--right {
+  box-sizing: border-box;
+  display: flex;
+  color: inherit;
+  margin-left: auto;
+  padding: 12px 12px 12px 0;
+  order: 2;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  line-height: 1.2;
+  min-height: $ListItemHeight;
+  background-image: linear-gradient(
+    0deg,
+    $ListItemBorderColor,
+    $ListItemBorderColor 100%
+  );
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .List__item--right {
+    background-image: linear-gradient(
+      0deg,
+      $ListItemBorderColor,
+      $ListItemBorderColor 50%,
+      transparent 50%
+    );
+  }
+}
+
+// -> Header
+//************
+.List__header {
+  color: $ListHeaderColor;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 0 1em;
+  min-height: $ListHeaderHeight;
+  line-height: $ListHeaderHeight;
+  position: relative;
+  background-color: $ListHeaderBgColor;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-weight: bold;
+  @extend .text-style-footnote !optional;
+}
+
+// -> Title
+//*******************
+.List__item--title {
+  flex-basis: 100%;
+  align-self: flex-end;
+  order: 0;
+  font-weight: $ListItemTitleWeight;
+  color: $ListItemTitleColor;
+}
+
+// -> Subtitle
+//*******************
+.List__item--subtitle {
+  font-size: 11px;
+  line-height: normal;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  order: 1;
+  flex-basis: 100%;
+  align-self: flex-start;
+  color: $ListItemSubtitleColor;
+}
+
+// -> Without Border
+//*******************
+.List__noborder {
+  border-top: none;
+  border-bottom: none;
+  background-image: none;
+}
+
+// -> Tappable
+//*******************
+.List__item--tappable:active {
+  transition: none;
+  background-color: #f2f2f2;
+}
+
+// -> Inset
+//*************
+.List__inset {
+  border: 1px solid $ListItemBorderColor;
+  border-radius: $ListInsetRadius;
+  background-image: none;
+  margin: 0 0.5em;
+}
+
+//-> Rounded
+//*************
+.List__rounded{
+  border-radius: $ListInsetRadius;
+}
+
+
+//-> Shadow
+//**************
+.List__shadow{
+  box-shadow: $ListShadow;
+  border: 0;
+}
+
+// -> Label
+//*******************
+.List__item--label {
+  color: $ListLabelColor;
+  padding: 0 0.25em;
+  @extend .text-style-footnote !optional;
+}
+
+// -> Thumbnail item
+//*******************
+.List__item--thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: $ListThumbnailRadius;
+  display: block;
+  margin: 0;
+  max-width: none;
+}
+
+.List__item--thumbnail--default{
+  width: 40px;
+  height: 40px;
+  margin-bottom: .5em;
+  border: 1px solid black;
+  border-radius: $ListThumbnailRadius;
+  color: $main-color;
+  text-align: center;
+  background-color: white;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+// -> Icon Item
+//*******************
+.List__item--icon {
+  color: inherit;
+  padding: 0 6px;
+  img{
+    max-width: none;
+  }
+}
+
+// -> Chevron
+//*******************
+.List__item--chevron:before {
+  border-right: 2px solid $ListChevronColor;
+  border-bottom: 2px solid $ListChevronColor;
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  transform: translateY(-50%) rotate(-45deg);
+  right: 1em;
+  top: 50%;
+  z-index: 5;
+}
+.List__item--chevron__right {
+  padding-right: 2em;
+}
+
+// -> Long divider
+//***********************
+.List__item--longdivider {
+  border-bottom: 1px solid $ListBorderColor;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(
+    0deg,
+    $ListBorderColor,
+    $ListBorderColor 100%
+  );
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .List__item--longdivider {
+    background-image: linear-gradient(
+      0deg,
+      $ListBorderColor,
+      $ListBorderColor 50%,
+      transparent 50%
+    );
+  }
+}
+.List__item--longdivider:last-of-type,
+.List__item--longdivider__center,
+.List__item--longdivider__right {
+  border: none;
+  background-image: none;
+}
+
+// -> No Padding on Item
+//**********************
+.List__item--nopadding {
+  padding: 0.5px;
+}
+
+// -> No divider
+//*******************
+.List__item--nodivider__center,
+.List__item--nodivider__right {
+  border: none;
+  background-image: none;
+}

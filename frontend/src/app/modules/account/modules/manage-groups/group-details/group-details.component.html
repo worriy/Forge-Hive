@@ -1,0 +1,79 @@
+<ion-content class="app">
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onReturn()" class="Toolbar__button">
+          <img src="assets/imgs/icons/left-arrow.svg" alt="">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <div *ngIf="group">
+          <div *ngIf="group.createdbyId == userProfileId">
+            <a type="submit" (click)="onShowAddMemberModal()" class="Toolbar__button">{{ "manageGroups.add" | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{group?.name}}</span>
+          <span class="Toolbar__subtitle">{{Members?.length}} {{ "manageGroups.members" | translate }} • {{group?.city}} | {{group?.country}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="AppMain has-grey-bg">
+    <div class="Main">
+      <div class="View" *ngIf="Members?.length > 0">
+        <div *ngIf="Members?.length < 2; then emptyGroupUser else fullGroupUser"></div>
+        <ng-template #emptyGroupUser>
+          <div class="highlights container">
+            <div class="highlights-item">
+              <div class="report highlights-card-container">
+                <div class="highlights-card-header">
+                  <div class="highlights-card_category">{{ "manageGroups.noMembers" | translate }}</div>
+                </div>
+                <div class="highlights-card-content">
+                  <div class="highlights-card_details">
+                    <div class="highlights-card_title">
+                        {{ "manageGroups.groupCreatedMessage" | translate }}
+                    </div>
+                  </div>
+                  <button ion-button full (click)="onShowAddMemberModal()">{{ "manageGroups.addMembers" | translate }}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template #fullGroupUser>
+          <ul class="List List__noborder">
+            <li tappable class="List__item" *ngFor="let member of Members">
+              <!-- User Thumbnail -->
+              <div class="List__item--left">
+                <img *ngIf="member.picture != null" class="List__item--thumbnail" [src]="'data:image/jpeg;base64,'+ member.picture"/>
+                <div *ngIf="member.picture == null" class="List__item--thumbnail--default">{{member.firstname.charAt(0)}}</div>   
+              </div>
+              
+              <div class="List__item--center">
+                <div class="List__item--title" *ngIf="member.userProfileId == userProfileId">{{ "manageGroups.you" | translate }}</div>
+                <div class="List__item--title" *ngIf="member.userProfileId != userProfileId">{{member.firstname}} {{member.lastname}}</div>
+                <div class="List__item--subtitle">{{member.job}}</div>
+              </div>
+              <div class="List__item--right">
+                <div class="List__item--icon">
+                  <div *ngIf="group?.createdbyId  != member.userProfileId " tappable  (click)="onPresentOptionsMenu(group?.idGroup,member.userProfileId)">
+                    <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+                  </div>
+                </div>
+              </div>
+            </li> 
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</ion-content>

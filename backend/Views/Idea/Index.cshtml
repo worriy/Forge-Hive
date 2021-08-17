@@ -1,0 +1,71 @@
+
+@model IEnumerable<Hive.Backend.DataModels.Idea>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Idea Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+				<th>
+            @Html.DisplayNameFor(m => m.Id)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.PublicationDate)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.Content)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.Type)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.EndDate)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.CreatedById)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.PictureId)
+        </th>
+		        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+				<th>
+            @Html.DisplayFor(modelItem => item.Id)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.PublicationDate)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.Content)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.Type)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.CreatedById)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.PictureId)
+        </th>
+		        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,14 @@
+
+<form class="form" [formGroup]="questionForm">
+  <div class="main">
+    <div class="new-post-step">
+      <div class="new-post-step-content">
+        <div class="container">
+          <div class="control">
+            <textarea formControlName="content" maxLength=140 class="textarea" placeholder="{{ 'quote.quoteContent' | translate }}" name="idea"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>account</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols"  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Global/Navbar/Flux-Copy" transform="translate(-359.000000, -9.000000)">
+            <g id="account" transform="translate(359.000000, 9.000000)">
+                <rect id="Rectangle-16"   x="0" y="0" width="24" height="24" rx="6"></rect>
+                <path d="M6,18 L6,17.0003052 L6.35561988,16.2970058 C6.78097881,15.4557854 7.33777669,14.6877857 8.0050354,14.0219421 C8.590297,13.4379217 9.50698577,13.3496244 10.192961,13.8111968 L10.5061646,14.0219421 C11.4103958,14.6303725 12.592117,14.6341327 13.5002019,14.031469 L13.8536294,13.7969118 C14.5362465,13.3438831 15.4441927,13.4382358 16.0190735,14.0219421 C16.6750055,14.687944 17.222671,15.4524935 17.6421926,16.2878418 L18,17.0003052 L18,18 L6,18 Z M12,12.8571429 C10.3431458,12.8571429 9,11.3221191 9,9.42857143 C9,7.53502371 10.3431458,6 12,6 C13.6568542,6 15,7.53502371 15,9.42857143 C15,11.3221191 13.6568542,12.8571429 12,12.8571429 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

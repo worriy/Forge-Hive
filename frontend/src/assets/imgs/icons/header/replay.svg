@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Assets/Icons/Rewind</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.25,13.33125 C20.25,17.3306249 16.5485,21.3299999 12,21.3299999 C7.4515,21.3299999 3.75,17.7412274 3.75,13.33125 C3.75,8.92127247 7.4515,5.33249998 12,5.33249998 L12,7.99874997 L18.875,3.99937499 L12,0 L12,2.66624999 C5.92525,2.66624999 1,7.44150372 1,13.33125 C1,19.2209962 5.92525,23.9962499 12,23.9962499 C18.07475,23.9962499 23,19.9968749 23,13.33125 L20.25,13.33125 Z" id="path-1"></path>
+    </defs>
+    <g id="Assets/Icons/Rewind" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="arrow_repeat-[#236]" fill="#79D0FD" xlink:href="#path-1"></use>
+        <g id="Assets/Colors/Blue" mask="url(#mask-2)" fill="#79D0FD">
+            <g transform="translate(-12.000000, -12.000000)" id="Blue">
+                <rect x="0" y="0" width="48" height="48"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

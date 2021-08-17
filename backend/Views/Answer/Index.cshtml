@@ -1,0 +1,59 @@
+
+@model IEnumerable<Hive.Backend.DataModels.Answer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Answer Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+				<th>
+            @Html.DisplayNameFor(m => m.Id)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.AnswerDate)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.AnsweredById)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.CardId)
+        </th>
+				<th>
+            @Html.DisplayNameFor(m => m.ChoiceId)
+        </th>
+		        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+				<th>
+            @Html.DisplayFor(modelItem => item.Id)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.AnswerDate)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.AnsweredById)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.CardId)
+        </th>
+				<th>
+            @Html.DisplayFor(modelItem => item.ChoiceId)
+        </th>
+		        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

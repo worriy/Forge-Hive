@@ -1,0 +1,98 @@
+<ion-content class="app">
+
+  <div class="header header-small has-main-color-bg ">
+    <div class="header-left">
+      <div class="view_title">{{ "posts.editPost" | translate }}</div>
+    </div>
+    <div class="header-center">
+      <div class="view_title">{{ "posts.editPost" | translate }}</div>
+    </div>
+    <div class="header-right">
+      <div class="header-item">
+        <a (click)="onCloseModal()">
+          <img src="assets/imgs/icons/header/close-white.svg" width="16px" height="16px" />
+        </a>       
+      </div>
+    </div>
+  </div>
+  <!-- Main -->
+  <div class="main">
+    <div class="View">
+    <div class="new-post-step">
+      <div class="new-post-step-content">
+        <div class="container">
+          <div *ngIf="post">
+            <form class="form" *ngIf="questionForm" [formGroup]="questionForm">
+              <div class="control">
+                <textarea formControlName="content" maxLength=140 class="textarea" placeholder="{{ 'question.questionContent' | translate }}" name="idea"></textarea>
+              </div>
+              <!-- Upload photo -->
+              <div class="upload-photo">
+                <div class="block-title">{{ "idea.uploadPic" | translate }}</div>
+                <div class="upload-photo-container">
+                  <div class="upload-photo-list">
+                    <div class="upload-photo-item is-empty">
+                      <div tappable class="divPhoto" (click)="onSelectImageSource()">
+
+                        <div *ngIf="pictureSelected; else noPictureSelected" class="upload-photo-item is-filled" [ngStyle]="{ 'background-image': 'url(' + smallImg + ')', 'border': userPictureStyle }">
+                          <ion-icon class="fakefile" name="camera"></ion-icon>
+                        </div>
+
+                        <ng-template #noPictureSelected>
+                          <div class="upload-photo-item is-filled" [ngStyle]="{ 'background-image': 'url(' + postPicture + ')', 'border': userPictureStyle }">
+                            <ion-icon class="fakefile" name="camera"></ion-icon>
+                          </div>
+                        </ng-template>
+                        
+
+
+                        <!-- <ion-icon class="fakefile" ios="ios-camera" md="md-camera"></ion-icon> -->
+                      </div>
+                    </div>
+                    <!--<div tappable *ngIf="defaultPicture" (click)="onAdaptImageBoxStyle(1)" class="upload-photo-item is-filled" [ngStyle]="{ 'background-image': 'url(' + defaultPicture + ')', 'border': defaultPictureStyle }"></div>-->
+                    <!-- <img *ngIf="pictureSelected == false" class="upload-photo-item is-filled" [src]="'data:image/jpeg;base64,' + post.picture"/>
+                    <img *ngIf="pictureSelected == true" class="upload-photo-item is-filled" [src]="smallImg" alt=""> -->
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <div class="control" style="padding-bottom: 50px">
+                <div *ngFor="let i of numberAnswers;">
+                  <ion-item *ngIf="i < count_answers">
+                    <ion-label position="floating">{{'question.answer' | translate}} {{i+1}}</ion-label>
+                    <ion-input formControlName="answer{{i+1}}" type="text" name="answer{{i+1}}"></ion-input>
+                  </ion-item>
+                </div>
+                <button class="button" (click)="onAddNumberAnswers()" *ngIf="visibleAdd">{{ "question.add" | translate }}</button>
+              </div>
+              <div class="field">
+                <ion-item lines="none" class="control is-focused">
+                  <ion-label class="label">{{ "posts.publicationDate" | translate }}</ion-label>
+                  <ion-datetime formControlName="publicationDate" max="2022-12-31" required type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="publicationDate"></ion-datetime>
+                </ion-item>
+              </div>
+              <div class="field">
+                <ion-item lines="none" class="control is-focused">
+                  <ion-label class="label">{{ "posts.endDate" | translate }}</ion-label>
+                  <ion-datetime formControlName="endDate" max="2022-12-31" type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="endDate" ></ion-datetime>
+                </ion-item>
+              </div>
+              <div class="field">
+                <ion-item lines="none" class="control is-focused">
+                  <ion-label class="label">{{ "posts.whoCanSee" | translate }}</ion-label>
+                  <ion-select formControlName="targetGroups" (ionChange)="onCheckSelectedGroups()" name="targetGroupIds" multiple="true">
+                    <ion-select-option *ngFor="let group of myGroups" value={{group.id}} >{{ group.name }}</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button expand="full" color="primary" class="button" (click)="onCheckInformation(currentPost)">{{ "commons.save" | translate }}</button>
+</ion-footer>

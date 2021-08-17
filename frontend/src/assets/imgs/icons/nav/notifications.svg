@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>notifications</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Global/Navbar/Flux-Copy" transform="translate(-274.000000, -9.000000)">
+            <g id="notifications" transform="translate(274.000000, 9.000000)">
+                <rect id="Rectangle-16"  x="0.7" y="0" width="23.6" height="24" rx="6"></rect>
+                <polyline id="Path-1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5.61666667 14.3902007 7.78937739 12.0622034 9.08529053 15.3582986 11.7845521 8.97461552 14.8726269 16.6265508 17.2661111 7 19.3833333 11.7388371"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

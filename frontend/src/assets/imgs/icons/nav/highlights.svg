@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>highlights</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Global/Navbar/Flux-Copy" transform="translate(-111.000000, -9.000000)">
+            <g id="highlights" transform="translate(111.000000, 9.000000)">
+                <rect id="Rectangle-16" x="0" y="0" width="24" height="24" rx="6"></rect>
+                <g id="Group-3" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <path d="M1,0 L13,0 C13.5522847,-1.01453063e-16 14,0.44771525 14,1 L14,1 C14,1.55228475 13.5522847,2 13,2 L1,2 C0.44771525,2 6.76353751e-17,1.55228475 0,1 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle"></path>
+                    <rect id="Rectangle-Copy" x="0" y="3" width="14" height="11" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

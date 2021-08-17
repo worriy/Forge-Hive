@@ -1,0 +1,15 @@
+<div *ngIf="generalMood" class="best contributor highlights-card-container">
+  <div *ngIf="generalMood?.value != 0">
+    <div class="highlights-card-header" style="background-color: rgb(255, 255, 255)">
+      <div class="highlights-card_category">
+        {{ "mood.generalMood" | translate }}
+      </div>
+    </div>
+    <div class="highlights-card-content" >
+        <!--<img src="../assets/imgs/{{generalMood?.moodName}}.jpg" />-->
+        <div class="generalMood">{{mood}}</div>
+        <img src="assets/imgs/{{generalMood?.moodName}}.png" />
+        <!--<img src="../assets/imgs/Sad.jpg" />-->
+    </div>
+  </div>
+</div>

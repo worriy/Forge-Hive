@@ -1,0 +1,277 @@
+/*==============================
+=           Toolbar            =
+==============================*/
+$ToolbarHeight: 48px !default;
+$ToolbarTitleFontSize: 15px !default;
+$ToolbarButtonFontSize: 13px !default;
+$ToolbarButtonBorderRadius: 5.5px !default;
+// Light Theme
+$ToolbarTitleColor: black !default;
+$ToolbarSubtitleColor: lighten(black, 20%) !default;
+$ToolbarButtonColor: black !default;
+$ToolbarBgColor: white !default;
+$ToolbarButtonBorderColor: grey !default;
+// Dark Theme
+$ToolbarDarkTitleColor: white !default;
+$ToolbarDarkSubtitleColor: lighten($ToolbarDarkTitleColor, 20%) !default;
+$ToolbarDarkButtonColor: white;
+$ToolbarDarkButtonBorderColor: white !default;
+$ToolbarDarkBgColor: black !default;
+
+.Toolbar {
+  height: $ToolbarHeight;
+  line-height: $ToolbarHeight;
+  position: relative;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-spacing: 0;
+  margin: 0;
+  font: inherit;
+  font-weight: 400;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: default;
+  user-select: none;
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  contain: content;
+  width: 100%;
+  box-shadow: none;
+  white-space: nowrap;
+  border-bottom: none; 
+  
+  // -> Left
+  //*******************
+  &__left {
+    padding: 0;
+    margin-right: auto;
+    border: none;
+    line-height: normal;
+    order: 3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    line-height: $ToolbarHeight;
+  } 
+  
+  // -> Center
+  //*******************
+  &__center {
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    order: 4;
+    flex-shrink: 0;
+    min-width: 0; // Only CENTER
+    opacity: 1;
+    transition: all .6s ease;
+    &:first-child:last-child {
+      width: 100%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+  } 
+  
+  // -> Right
+  //*******************
+  &__right {
+    line-height: $ToolbarHeight;
+    order: 5;
+    padding: 0;
+    justify-content: flex-end;
+    background: transparent;
+    border: none;
+    line-height: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+  } // -> Logo
+  //*******************
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    img {
+      max-height: $ToolbarHeight;
+    }
+    &:first-child {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// -> Center Container
+//*******************
+.Toolbar__center--container {
+  height: $ToolbarHeight;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateZ(0);
+  .Toolbar__title {
+    font-size: $ToolbarTitleFontSize;
+    font-weight: bold;
+    max-width: calc(100% - 90px);
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+}
+
+// -> Subtitle
+//*******************
+.Toolbar__subtitle {
+  font-size: ceil($ToolbarTitleFontSize * 0.75);
+  font-weight: normal;
+}
+
+.Toolbar__center:first-child:last-child {
+  width: 100%;
+}
+
+// -> Item
+//*******************
+.Toolbar__item {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0 .5rem;
+  margin: 0;
+  font-weight: 400;
+  font-size: $ToolbarButtonFontSize;
+  line-height: $ToolbarButtonFontSize;
+  color: inherit;
+  background: transparent;
+  border: none;
+  height: $ToolbarHeight;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  vertical-align: middle;
+}
+
+// -> Buttom
+//*******************
+.Toolbar__button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: .5rem;
+  letter-spacing: 0;
+  color: $ToolbarButtonColor;
+  background-color: transparent;
+  border-radius: $ToolbarButtonBorderRadius;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: $ToolbarButtonFontSize;
+  line-height: $ToolbarButtonFontSize;
+  transition: none;
+  display: flex;
+  align-items: center;
+  appearance: none !important;
+  &.Toolbar__button--outlined{
+    border: 1px solid $ToolbarButtonBorderColor;
+    margin: 0 .5rem;
+  }
+  &:active {
+    background-color: rgba(0, 0, 0, 0);
+    transition: none;
+    opacity: 1;
+  }
+  &:disabled,
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+  &:focus {
+    outline: 0;
+    transition: none;
+  }
+  &:hover {
+    transition: none;
+  }
+  //- Icon
+  i {
+    margin-right: .25rem;
+    font-size: 125%;
+  }
+}
+
+// -> Toolbar animation on Scroll
+//*******************************$
+.Toolbar__hidden--content {
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.Toolbar__visible--content {
+  opacity: 1 !important;
+  transition: all .4s ease;
+}
+
+// -> Theme (light/dark)
+//*******************************$
+.Toolbar__light {
+  .Toolbar__title {
+    color: $ToolbarTitleColor;
+  }
+  .Toolbar__subtitle {
+    color: $ToolbarSubtitleColor;
+  }
+  .Toolbar__button {
+    color: $ToolbarButtonColor;
+  }
+  i {
+    color: $ToolbarButtonColor;
+  }
+}
+
+.Toolbar__dark {
+  .Toolbar__title {
+    color: $ToolbarDarkTitleColor;
+  }
+  .Toolbar__subtitle {
+    color: $ToolbarDarkSubtitleColor;
+  }
+  .Toolbar__button{
+    color: $ToolbarDarkButtonColor;
+    &.Toolbar__button--outlined{
+      border-color: $ToolbarDarkButtonBorderColor;
+    }
+  }
+  i {
+    color: $ToolbarDarkButtonColor;
+  }
+}

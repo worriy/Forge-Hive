@@ -1,0 +1,8 @@
+<div class="List__item">
+  <label class="List__item--center">
+      {{ "settings.notifications"| translate }} 
+  </label>
+  <div class="List__item--right">
+    <ion-toggle disabled="false" [(ngModel)]="notificationsSetting" (ionChange)="onChangeSetting()"></ion-toggle>
+  </div>
+</div>

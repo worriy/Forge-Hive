@@ -1,0 +1,196 @@
+<div class="header header-big has-main-color-bg with-triangle">
+  <div class="header-left">
+    <div class="view_title">{{ "posts.postsConcernTitle" | translate }}</div>
+  </div>
+  <div class="header-right">
+    <div class="header-item">
+      <a (click)="onToChooseNewPostCategory()">
+        <img src="assets/imgs/icons/new-post.svg" width="32px" height="32px" />
+      </a>       
+    </div>
+  </div>
+</div>
+
+<!-- Main -->
+<div class="main with-triangle">
+  <div *ngIf="posts">
+    <div *ngIf="posts?.length == 0; then emptyPosts else fullPosts"></div>
+    <ng-template #emptyPosts>
+      <div class="highlights container">
+        <div class="highlights-item">
+          <div class="report highlights-card-container">
+            <div class="highlights-card-header">
+              <div class="highlights-card_category">{{ "posts.noContent" | translate }}</div>
+            </div>
+            <div class="highlights-card-content">
+              <div class="highlights-card_details">
+                <div class="highlights-card_title">
+                  {{ "posts.startCreate" | translate }}
+                </div>
+              </div>
+              <button class="button" ion-button full (click)="onToChooseNewPostCategory()">{{ "posts.create" | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #fullPosts>
+      <posts-top-posts></posts-top-posts>
+
+      <div class="posts">
+        <div class="tabs-post empty">
+          <div class="tab-post {{isAll}}" (click)="onGoTo('All')" >{{ "posts.all" | translate }}</div>
+          <div class="tab-post {{isIdeas}}" (click)="onGoTo('Idea')">{{ "posts.ideas" | translate }} </div>
+          <div class="tab-post {{isQuestions}}" (click)="onGoTo('Question')">{{ "posts.questions" | translate }} </div>
+          <!-- <div class="tab-post {{isSurveys}}" (click)="onGoTo('Survey')">{{ "posts.surveys" | translate }} </div> -->
+          <div class="tab-post {{isEvents}}" (click)="onGoTo('Event')">{{ "posts.events" | translate }} </div>  
+          <div class="tab-post {{isQuotes}}" (click)="onGoTo('Quote')">{{ "posts.quotes" | translate }} </div>
+          <div class="tab-post {{isSuggestions}}" (click)="onGoTo('Suggestion')">{{ "posts.suggestions" | translate }} </div>    
+        </div>
+      </div>
+      
+      <div *ngIf="isAll == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts">
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type != 'Mood'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isIdeas == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Idea'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Idea'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isQuestions == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+        
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Question'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Question'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isSurveys == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+        
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Survey'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Survey'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isEvents == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+        
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Event'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Event'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="role == 'Admin' && isQuotes == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+          
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Quote'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Quote'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="role == 'Admin' && isSuggestions == 'is-active'">
+        <ul class="List List__noborder">
+          <li tappable class="List__item" *ngFor="let post of posts ">
+          
+            <div class="List__item--center" (click)="onShowPostDetailsModal(post)" *ngIf="post.type == 'Suggestion'">
+              <div class="List__item--title">{{ post.content }}</div>
+              <div class="List__item--subtitle">
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span>
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </div>
+            </div>
+            <div class="List__item--right" *ngIf="post.type == 'Suggestion'">
+              <div tappable class="List__item--icon" (click)="onPresentOptionsMenu(post)">
+                <img src="assets/imgs/icons/dots-vertical-rounded.svg" alt="more" width="32px" height="32px" srcset="">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <ion-infinite-scroll treshold="50px" (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
+    </ng-template>
+  </div>
+</div>
