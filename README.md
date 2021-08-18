@@ -224,7 +224,7 @@ This takes the user back to the login page to reconnect.
 
 #  Variability specification - The feature model <span id="variability-specification"/>
 
-As presented in the [documentation](https://documentation.mobioos.ai) of Mobioos Forge, the first step consists of defining the application's functionalities and explicitly specifies software variability using  **feature models**.
+As presented in the [documentation](https://documentation.mobioos.ai) of Mobioos Forge, the first step consists of defining the application's functionalities and explicitly speciying software variability using  **feature models**.
 
 In the context of **HIVE**, we identified several features and resources for this application. The following figure shows the feature  model related to the **HIVE** application.
 
