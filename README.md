@@ -294,7 +294,7 @@ However, If **_Quote_** and/or **_Suggestion_** are selected, we can choose whet
 
 # Variability implementation - Marking <span id="variability-implementation-marking"/>
 ## The code base
-The first step to map features to the code source is to create what is called by **Mobioos Forge** **_markers_**. A marker is a code fragment that is related to a specific feature or resource. It is provided by developers to shows initial information that will be  used during the feature mapping step.
+The first step to map features to the code source is to create what is called by **Mobioos Forge** **_markers_**. A marker is a code fragment that is related to a specific feature or resource. It is provided by developers to show the initial information that will be  used during the feature mapping step.
 
 
 Before starting to place markers we need to analyze the code to have a better idea of what impact each feature should have on our code.
