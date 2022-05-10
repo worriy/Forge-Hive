@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="43px" viewBox="0 0 50 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Flux/Cards/Quote" transform="translate(-23.000000, -159.000000)" fill="#168FE8" fill-rule="nonzero">
+            <g id="Quote" transform="translate(23.000000, 159.000000)">
+                <g id="Shape">
+                    <path d="M9.65380271,0.105623016 C4.38008283,0.105623016 0.102146084,4.45971429 0.102146084,9.83181349 C0.102146084,15.2006706 4.38008283,19.558004 9.65380271,19.558004 C19.2021837,19.558004 12.8376883,38.3587302 0.102146084,38.3587302 L0.102146084,42.897619 C22.8315512,42.9008611 31.7379142,0.105623016 9.65380271,0.105623016 Z M37.168863,0.105623016 C31.8984187,0.105623016 27.6204819,4.45971429 27.6204819,9.83181349 C27.6204819,15.2006706 31.8984187,19.558004 37.168863,19.558004 C46.7205196,19.558004 40.3560241,38.3587302 27.6204819,38.3587302 L27.6204819,42.897619 C50.3466114,42.9008611 59.2529744,0.105623016 37.168863,0.105623016 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

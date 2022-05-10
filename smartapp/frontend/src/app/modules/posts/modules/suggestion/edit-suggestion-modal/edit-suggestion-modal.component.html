@@ -1,0 +1,61 @@
+<ion-content class="app">
+
+  <div class="header header-small has-main-color-bg ">
+    <div class="header-left">
+      <div class="view_title">{{ "posts.editPost" | translate }}</div>
+    </div>
+    <div class="header-center">
+      <div class="view_title">{{ "posts.editPost" | translate }}</div>
+    </div>
+    <div class="header-right">
+      <div class="header-item">
+        <a (click)="onCloseModal()">
+          <img src="assets/imgs/icons/header/close-white.svg" width="16px" height="16px" />
+        </a>       
+      </div>
+    </div>
+  </div>
+  <form class="ion-margin" *ngIf="suggestionForm" [formGroup]="suggestionForm">
+    <ion-textarea rows="5" formControlName="content" maxLength=90 placeholder="{{ 'suggestion.suggestionContent' | translate }}" name="idea"></ion-textarea>
+
+    <ion-text class="ion-margin-top">
+      <h6>
+        {{ "idea.uploadPic" | translate }}
+      </h6>
+    </ion-text>
+    <div class="select-post-picture ion-margin-top">
+      <div 
+        class="picture-box custom ion-margin-end" 
+        [ngStyle]="{ 'background-image': 'url(' + customImg + ')'}" 
+        [ngClass]="{'is-selected': pictureSelected}"
+        (click)="selectImageSource()"
+      >
+        <ion-icon class="icon" name="camera"></ion-icon>
+      </div>
+      <div 
+        class="picture-box default" 
+        [ngStyle]="{ 'background-image': 'url(' + postPicture + ')'}"
+        [ngClass]="{'is-selected': !pictureSelected}"
+        (click)="pictureSelected = false">
+      </div>
+    </div>
+
+    <ion-item class="ion-margin-top">
+      <ion-label>{{ "posts.publicationDate" | translate }}</ion-label>
+      <ion-datetime formControlName="publicationDate" max="2050" type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="publicationDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ "posts.endDate" | translate }}</ion-label>
+      <ion-datetime formControlName="endDate" max="2050" type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="endDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ "posts.whoCanSee" | translate }}</ion-label>
+      <ion-select formControlName="targetGroups" (ionChange)="checkSelectedGroups()" name="targetGroups" multiple="true">
+        <ion-select-option *ngFor="let group of myGroups" value='{{group.id}}' >{{ group.name }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </form>
+</ion-content>
+<ion-footer>
+  <button expand="full" color="primary" class="button" (click)="checkInformation(currentPost)">{{ "commons.save" | translate }}</button>
+</ion-footer>

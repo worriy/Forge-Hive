@@ -1,0 +1,18 @@
+@function dynamic-text-color($color: null) {
+  @if (lightness($color) > 50) {
+    @return darken($color, 25%);
+  } @else {
+    @return lighten($color, 50%);
+  }
+}
+
+$primary-color: #4324B0;
+$primary-color-contrast: dynamic-text-color($primary-color);
+$secondary-color: #715FFF;
+
+$success: #B8E986;
+$danger: #E88797;
+
+$light-grey: #E5E5EA;
+
+$quote-bg-color: #3EAFFA;

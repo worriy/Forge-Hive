@@ -1,0 +1,9 @@
+{
+    "replacements": [
+        {
+            "id": "noCards-List-Without-Cards",
+            "content": "cards == null || cards == undefined || cards.length == 0",
+            "editorExtension": ".html"
+        }
+    ]
+}

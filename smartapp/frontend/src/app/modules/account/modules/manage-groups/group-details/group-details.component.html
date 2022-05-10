@@ -1,0 +1,74 @@
+<ion-content class="app">
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onReturn()" class="Toolbar__button">
+          <img src="assets/imgs/icons/left-arrow.svg" alt="">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <div *ngIf="group">
+          <div *ngIf="group.createdbyId == userProfileId">
+            <a type="submit" (click)="onShowAddMemberModal()" class="Toolbar__button">{{ "manageGroups.add" | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{group?.name}}</span>
+          <span class="Toolbar__subtitle">{{Members?.length}} {{ "manageGroups.members" | translate }} • {{group?.city}} | {{group?.country}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="AppMain has-grey-bg">
+    <div class="Main">
+      <div class="View" *ngIf="Members?.length > 0">
+        <div *ngIf="Members?.length < 2; then emptyGroupUser else fullGroupUser"></div>
+        <ng-template #emptyGroupUser>
+          <div class="empty_content_card ion-margin">
+            <div class="header">
+              {{ "manageGroups.noMembers" | translate }}
+            </div>
+            <div class="info_text">
+              {{ "manageGroups.groupCreatedMessage" | translate }}
+            </div>
+            <div class="footer">
+              <button class="button" (click)="onShowAddMemberModal()">{{ "manageGroups.addMembers" | translate }}</button>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template #fullGroupUser>
+          <ion-list lines="none" calss="ion-no-padding">
+            <ion-item *ngFor="let member of Members">
+              <ion-thumbnail slot="start">
+                <img *ngIf="member.picture != null" class="thumbnail" [src]="'data:image/jpeg;base64,'+ member.picture"/>
+                <div *ngIf="member.picture == null" class="thumbnail--default">{{member.firstname.charAt(0)}}</div>   
+              </ion-thumbnail>
+              <ion-label>
+                <h2><strong>
+                  <span *ngIf="member.userProfileId == userProfileId">{{ "manageGroups.you" | translate }}</span>
+                  <span *ngIf="member.userProfileId != userProfileId">{{member.firstname}} {{member.lastname}}</span>
+                </strong></h2>
+                <p>
+                  {{member.job}}
+                </p>
+              </ion-label>
+              <ion-icon 
+                *ngIf="group?.createdbyId != member.userProfileId"
+                name="ellipsis-vertical" 
+                slot="end" 
+                (click)="onPresentOptionsMenu(group?.idGroup,member.userProfileId)">
+              </ion-icon>
+            </ion-item>
+          </ion-list>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</ion-content>

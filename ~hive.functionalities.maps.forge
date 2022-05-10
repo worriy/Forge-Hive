@@ -1,0 +1,2573 @@
+{
+    "rangeSeeds": [
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/posts-routing.module.ts",
+            "seeds": [
+                {
+                    "id": "a8973e02-b411-4048-a747-5ee2865ddce9",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 36,
+                    "startColumn": 6,
+                    "endLine": 39,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a627a4e0-827e-4254-80b0-4c837e087921",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 40,
+                    "startColumn": 6,
+                    "endLine": 43,
+                    "endColumn": 7,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/posts.component.ts",
+            "seeds": [
+                {
+                    "id": "a8e6703b-91b4-466b-9f30-2edb3ab4df3d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 223,
+                    "startColumn": 6,
+                    "endLine": 230,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "c14256d0-2a51-4775-9876-e499874ba072",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 231,
+                    "startColumn": 6,
+                    "endLine": 238,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/posts-main/posts-main.component.html",
+            "seeds": [
+                {
+                    "id": "3f6329c8-9560-4aea-a79a-d9d9eeef2440",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 44,
+                    "startColumn": 10,
+                    "endLine": 44,
+                    "endColumn": 147,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ed1b63dd-a3c9-48b8-bd78-3a8d8b0d54c1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 45,
+                    "startColumn": 10,
+                    "endLine": 45,
+                    "endColumn": 163,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/posts-main/posts-main.component.ts",
+            "seeds": [
+                {
+                    "id": "1552f8a7-5926-4cd7-9c4d-6df9e9600f6e",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 223,
+                    "startColumn": 6,
+                    "endLine": 230,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "b67ff309-03c4-4ecf-899c-ec845d5739bc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 231,
+                    "startColumn": 6,
+                    "endLine": 238,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/post-details-modal/post-details-modal.component.html",
+            "seeds": [
+                {
+                    "id": "89785001-cad1-471c-9a13-924eaabb1632",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 77,
+                    "startColumn": 12,
+                    "endLine": 80,
+                    "endColumn": 18,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a167b7c5-f2eb-41b8-81d0-aec602940e5c",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 85,
+                    "startColumn": 15,
+                    "endLine": 85,
+                    "endColumn": 44,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/post-details-modal/post-details-modal.component.ts",
+            "seeds": [
+                {
+                    "id": "de7f97f0-63d1-492c-860a-a16c412ee731",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 111,
+                    "startColumn": 6,
+                    "endLine": 116,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a25cae39-548a-48b9-b88e-76ff84394a85",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 117,
+                    "startColumn": 6,
+                    "endLine": 122,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/choose-new-post-category/choose-new-post-category.component.html",
+            "seeds": [
+                {
+                    "id": "cf76af72-eeb8-48ef-a939-9d23900fc238",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 48,
+                    "startColumn": 8,
+                    "endLine": 57,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "8dd46cde-02c3-4e1a-a592-47e866f7b453",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 58,
+                    "startColumn": 8,
+                    "endLine": 67,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/choose-new-post-category/choose-new-post-category.component.ts",
+            "seeds": [
+                {
+                    "id": "a0139820-b463-419f-b711-675eacf38ba5",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 34,
+                    "startColumn": 6,
+                    "endLine": 36,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "2915aa43-dcf2-4524-9cf2-2bd913177d0e",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 37,
+                    "startColumn": 6,
+                    "endLine": 39,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/interfaces/posts/card-types.enum.ts",
+            "seeds": [
+                {
+                    "id": "714bb8d8-0b02-4d91-a4e7-6f914c271333",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 5,
+                    "startColumn": 6,
+                    "endLine": 6,
+                    "endColumn": 7,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "8ebfcc25-e709-454d-bea5-9f4b901b2385",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 6,
+                    "startColumn": 7,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/top-posts/top-posts.component.html",
+            "seeds": [
+                {
+                    "id": "ed1a3b47-7ee5-4b14-96f4-0604dbd64473",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 5,
+                    "startColumn": 13,
+                    "endLine": 5,
+                    "endColumn": 42,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "707d6673-9b57-4309-80b5-26f46068bdd4",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 6,
+                    "startColumn": 8,
+                    "endLine": 6,
+                    "endColumn": 132,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/shared.module.ts",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/frontend/src/assets/sass/components/cards/cards.scss",
+            "seeds": [
+                {
+                    "id": "220f822a-eec9-4648-a9a5-24d80439a831",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "endLine": 52,
+                    "endColumn": 5,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "035676e7-2248-4714-8f5d-fd549f06a06a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "endLine": 190,
+                    "endColumn": 5,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/theme/variables.scss",
+            "seeds": [
+                {
+                    "id": "58b336d4-5927-4a8f-811e-6e915056769a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 17,
+                    "startColumn": 0,
+                    "endLine": 17,
+                    "endColumn": 25,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/event-card/event-card.component.html",
+            "seeds": [
+                {
+                    "id": "9f97f19a-3fc8-4b2f-a5c7-e86f4526d81a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 1,
+                    "startColumn": 2,
+                    "endLine": 39,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "f7c6493a-04d6-476b-ab23-1897855ae3b7",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 7,
+                    "startColumn": 8,
+                    "endLine": 18,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "bf814064-cf2d-445e-aa08-14ffd99faa50",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 41,
+                    "startColumn": 2,
+                    "endLine": 65,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/idea-card/idea-card.component.html",
+            "seeds": [
+                {
+                    "id": "75f7fba0-2c11-4417-b1be-b0ddab3b7460",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 2,
+                    "startColumn": 2,
+                    "endLine": 38,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "6724fd28-5b8b-4232-9191-b8b3e10aca8e",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 8,
+                    "startColumn": 8,
+                    "endLine": 19,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "d5cd1511-2179-4d67-895f-98c3ef3511f2",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 40,
+                    "startColumn": 2,
+                    "endLine": 62,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/question-card/question-card.component.html",
+            "seeds": [
+                {
+                    "id": "ddecc6db-1ef0-4365-a14f-f0f4338bcc9c",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 1,
+                    "startColumn": 2,
+                    "endLine": 36,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "3499a1f8-1a13-4a8b-b3c8-a15176b36bc3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 7,
+                    "startColumn": 8,
+                    "endLine": 18,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "45f9b214-3f53-48cf-9bf5-49f2621cfba9",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 38,
+                    "startColumn": 2,
+                    "endLine": 59,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.html",
+            "seeds": [
+                {
+                    "id": "764448a5-995d-4266-b9a8-d81e5be7296b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 54,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "8d99cf04-bb62-42ce-ae44-bdf6168c6cef",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 1,
+                    "startColumn": 2,
+                    "endLine": 34,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "69511f60-e94c-416f-9bc8-a0ce66d550c2",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 6,
+                    "startColumn": 8,
+                    "endLine": 17,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ea3be4d2-025a-4a5e-92d8-4b95b41f9df8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 36,
+                    "startColumn": 2,
+                    "endLine": 52,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.html",
+            "seeds": [
+                {
+                    "id": "2bd164b4-3730-4f63-bd1a-e1a2149790e1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 54,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "256a7027-abcd-4145-bd35-d9045774f87b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 1,
+                    "startColumn": 2,
+                    "endLine": 33,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "08cb1862-de8d-43d5-91c8-bd8ecf493245",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 7,
+                    "startColumn": 8,
+                    "endLine": 18,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "fc207e15-fd90-40f0-8461-bfe9316ce41b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 35,
+                    "startColumn": 2,
+                    "endLine": 52,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.ts",
+            "seeds": [
+                {
+                    "id": "315a62ad-60e7-4a16-a9d5-39dc84576103",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 101,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "108660ba-8f18-4db2-a9fb-cacae860a007",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 72,
+                    "startColumn": 2,
+                    "endLine": 89,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/question-card/question-card.component.ts",
+            "seeds": [
+                {
+                    "id": "2fd802a4-050b-43ca-91e2-e35472632fc3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 91,
+                    "startColumn": 1,
+                    "endLine": 108,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/idea-card/idea-card.component.ts",
+            "seeds": [
+                {
+                    "id": "8403c1bd-9741-4aee-8ce4-befed200d0da",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 114,
+                    "startColumn": 2,
+                    "endLine": 131,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/highlights/top-posts-card-modal/top-posts-card-modal.component.html",
+            "seeds": [
+                {
+                    "id": "c103e3fd-63bf-4139-b195-7b42da9612a3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 62,
+                    "startColumn": 5,
+                    "endLine": 65,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "33162fbc-ffaa-4826-971b-2e7e51599c40",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 79,
+                    "startColumn": 8,
+                    "endLine": 90,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/highlights/top-posts/top-posts.component.html",
+            "seeds": [
+                {
+                    "id": "5ab6a432-1021-4bf4-aab1-feb349b5a55f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 12,
+                    "startColumn": 112,
+                    "endLine": 13,
+                    "endColumn": 105,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/highlights/best-post/best-post.component.html",
+            "seeds": [
+                {
+                    "id": "786bc102-7877-432b-aa68-8e5785828533",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 42,
+                    "startColumn": 6,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/highlights/best-contributor/best-contributor.component.html",
+            "seeds": [
+                {
+                    "id": "d1d0eaa4-a020-47b0-b22e-0a38f2a3f91a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "endLine": 25,
+                    "endColumn": 10,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/interfaces/posts/cardVM.ts",
+            "seeds": [
+                {
+                    "id": "aa302897-9939-4880-b6bf-ed25a480cb01",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 23,
+                    "startColumn": 2,
+                    "endLine": 23,
+                    "endColumn": 16,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/app.component.ts",
+            "seeds": [
+                {
+                    "id": "d5e922e9-6eb8-4421-9334-a96f15fd1e30",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "317a9a2f-8a56-4964-b391-39b67db9e38a",
+                    "startLine": 30,
+                    "startColumn": 6,
+                    "endLine": 30,
+                    "endColumn": 42,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "9cfeac14-987d-48e4-8feb-e809c6546f7d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "41c349f7-d4b3-42bc-a787-6107802f1c8f",
+                    "startLine": 31,
+                    "startColumn": 6,
+                    "endLine": 31,
+                    "endColumn": 42,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "0e08859e-a543-48f5-9970-52812e92844f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "41c349f7-d4b3-42bc-a787-6107802f1c8f",
+                    "startLine": 32,
+                    "startColumn": 6,
+                    "endLine": 32,
+                    "endColumn": 31,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "0481310c-6f8b-4efa-813c-5f2922917796",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "317a9a2f-8a56-4964-b391-39b67db9e38a",
+                    "startLine": 33,
+                    "startColumn": 6,
+                    "endLine": 33,
+                    "endColumn": 31,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/app.module.ts",
+            "seeds": [
+                {
+                    "id": "90e17c47-6b12-4be8-ab74-1f1d83b6d14d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "41c349f7-d4b3-42bc-a787-6107802f1c8f",
+                    "startLine": 36,
+                    "startColumn": 6,
+                    "endLine": 36,
+                    "endColumn": 27,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "cf68c079-548e-4ec9-9481-438381bcab06",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "317a9a2f-8a56-4964-b391-39b67db9e38a",
+                    "startLine": 37,
+                    "startColumn": 6,
+                    "endLine": 37,
+                    "endColumn": 27,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/flow/flow.component.html",
+            "seeds": [
+                {
+                    "id": "9902a27e-a8b4-49f5-9fd2-c4ea0f9b995f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "endLine": 10,
+                    "endColumn": 120,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "e256ebe6-1744-4fc7-a787-4f3bd09453ae",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "endLine": 11,
+                    "endColumn": 99,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "f67cb078-feae-4533-958f-389859b1c085",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 31,
+                    "startColumn": 6,
+                    "endLine": 57,
+                    "endColumn": 21,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "bd65f8fb-c5f1-41a0-a3dc-826640ac88f0",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 46,
+                    "startColumn": 204,
+                    "endLine": 48,
+                    "endColumn": 204,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "dcec52fe-9542-4797-accc-ad33be96e938",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 49,
+                    "startColumn": 16,
+                    "endLine": 50,
+                    "endColumn": 219,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "00b20e54-9402-4d12-b2f6-6360ad2bfe9f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 59,
+                    "startColumn": 6,
+                    "endLine": 81,
+                    "endColumn": 21,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "33022322-8939-4af7-815e-8551f4df2b58",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 71,
+                    "startColumn": 170,
+                    "endLine": 73,
+                    "endColumn": 170,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "f9cfbaf4-bea5-4e2f-a94a-0774fda7f8fd",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 74,
+                    "startColumn": 14,
+                    "endLine": 75,
+                    "endColumn": 185,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/mood-card/mood-card.component.html",
+            "seeds": [
+                {
+                    "id": "082508f0-18af-4ee9-8fb8-d32af2ed4c4a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 1,
+                    "startColumn": 2,
+                    "endLine": 33,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ace0e6ee-d442-4b90-bbad-30f01e27ad0f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 35,
+                    "startColumn": 2,
+                    "endLine": 65,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/reporting-card/reporting-card.component.html",
+            "seeds": [
+                {
+                    "id": "91c140fd-8f2d-4442-8a84-9e76145270ad",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 2,
+                    "startColumn": 2,
+                    "endLine": 64,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "f5ea39ac-a90a-43e2-8d17-70ac86c669d5",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 57,
+                    "startColumn": 8,
+                    "endLine": 60,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "12fbae34-aa68-4b6e-b350-43583633dcd4",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 66,
+                    "startColumn": 2,
+                    "endLine": 126,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/event-card/event-card.component.ts",
+            "seeds": [
+                {
+                    "id": "82928dd3-18fe-43fd-9d6e-6d0453426752",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 86,
+                    "startColumn": 2,
+                    "endLine": 104,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/mood-card/mood-card.component.ts",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.ts",
+            "seeds": [
+                {
+                    "id": "9de816ac-c67e-4f0a-8632-dd05e612f1c1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 90,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/reporting-card/reporting-card.component.ts",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/backend/Models/Helpers/CardTypes.cs",
+            "seeds": [
+                {
+                    "id": "26af384d-7501-481d-a0f8-fe5269a79216",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 9,
+                    "startColumn": 12,
+                    "endLine": 10,
+                    "endColumn": 13,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "e1f3e27d-9d83-41de-a2f7-abf0c1499dd9",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 10,
+                    "startColumn": 13,
+                    "endLine": 11,
+                    "endColumn": 18,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Repositories/CardRepository.cs",
+            "seeds": [
+                {
+                    "id": "2ae9b172-6fd7-4024-a3b1-c5dab75c421a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 656,
+                    "startColumn": 16,
+                    "endLine": 657,
+                    "endColumn": 58,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "7ff3746c-ae47-4a60-b5af-124ec2368396",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 658,
+                    "startColumn": 16,
+                    "endLine": 659,
+                    "endColumn": 48,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/DbInitializer.cs",
+            "seeds": [
+                {
+                    "id": "4732d49f-5cca-4391-90f3-111acc371dbc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 324,
+                    "startColumn": 8,
+                    "endLine": 341,
+                    "endColumn": 9,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Program.cs",
+            "seeds": [
+                {
+                    "id": "5e0322d3-e59e-4a22-af88-462ef1829826",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 26,
+                    "startColumn": 8,
+                    "endLine": 26,
+                    "endColumn": 51,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/ViewModels/BestContributorVM.cs",
+            "seeds": [
+                {
+                    "id": "41e4e565-f6bc-473e-af04-95e80b70f103",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "endLine": 17,
+                    "endColumn": 34,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/ViewModels/CardVM.cs",
+            "seeds": [
+                {
+                    "id": "ce4da95d-555a-4b8b-8110-c89d26981f73",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "endLine": 21,
+                    "endColumn": 34,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "e18be390-9609-4f39-8a0a-0cb0f5c51e86",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "endLine": 23,
+                    "endColumn": 37,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/ViewModels/PostDetailsVM.cs",
+            "seeds": [
+                {
+                    "id": "28b68cd2-6587-4c4d-9704-e5ef8e2d042a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "endLine": 18,
+                    "endColumn": 34,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/ViewModels/ReportVM.cs",
+            "seeds": [
+                {
+                    "id": "09f54c41-c6f1-473e-aae2-13d72dbd335e",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "endLine": 15,
+                    "endColumn": 34,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Repositories/UserProfileRepository.cs",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/backend/Models/Quote.cs",
+            "seeds": [
+                {
+                    "id": "1864483e-54c9-4389-9195-404292867f35",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 11,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Models/Suggestion.cs",
+            "seeds": [
+                {
+                    "id": "f2ae2a34-0eb2-4c61-bc6f-1c74bc5dfe2f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 11,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Models/JoinTables/UserCardLikes.cs",
+            "seeds": [
+                {
+                    "id": "6b10c714-93c8-4bc4-b8b8-b548655d7f9a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 17,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Models/Reporting.cs",
+            "seeds": [
+                {
+                    "id": "0038b644-1e35-4ea0-aec9-f17d17255abc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "endLine": 12,
+                    "endColumn": 34,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Repositories/Interfaces/ICardRepository.cs",
+            "seeds": [
+                {
+                    "id": "b5061175-94ba-4e71-aa21-5c068fb1dd15",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 20,
+                    "startColumn": 8,
+                    "endLine": 20,
+                    "endColumn": 51,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ca7260aa-4027-4fb7-bcee-44bb01ba05b7",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 21,
+                    "startColumn": 8,
+                    "endLine": 21,
+                    "endColumn": 54,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ac0ca606-a50e-4e57-a64a-276d903c7590",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 22,
+                    "startColumn": 8,
+                    "endLine": 22,
+                    "endColumn": 60,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Repositories/Interfaces/IUserProfileRepository.cs",
+            "seeds": [
+                {
+                    "id": "a9f13390-ed2d-4638-9bab-052bf6b83b15",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 18,
+                    "startColumn": 8,
+                    "endLine": 18,
+                    "endColumn": 40,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Services/CardService.cs",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/backend/Services/ICardService.cs",
+            "seeds": [
+                {
+                    "id": "2753ed0d-c695-4140-a9b2-6a2776a828c3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 23,
+                    "startColumn": 8,
+                    "endLine": 25,
+                    "endColumn": 60,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Services/IUserProfileService.cs",
+            "seeds": [
+                {
+                    "id": "eba1e46a-1976-4adf-b1a0-e70a4ae9fa43",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+                    "startLine": 19,
+                    "startColumn": 8,
+                    "endLine": 19,
+                    "endColumn": 40,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Services/UserProfileService.cs",
+            "seeds": []
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/flow/flow.component.ts",
+            "seeds": [
+                {
+                    "id": "72ecc910-ae81-4e5a-94e0-6f92f191f193",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "9d326605-ec24-4906-8404-b62d06ed1907",
+                    "startLine": 394,
+                    "startColumn": 2,
+                    "endLine": 406,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "27ece617-ac37-4ef7-8c41-1bbf1593409b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+                    "startLine": 411,
+                    "startColumn": 2,
+                    "endLine": 419,
+                    "endColumn": 3,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "5ee30892-95ac-4244-8c8b-ec6e20c83826",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.ts",
+            "seeds": [
+                {
+                    "id": "008dc6e2-a04e-4889-928c-12f1c9f2f23d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 48,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "b0c140d7-afe3-4efb-ae77-e34082c3fa41",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.ts",
+            "seeds": [
+                {
+                    "id": "1c828907-eadb-432d-8605-a3ebadb48303",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 92,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "00370620-42c6-42a0-8723-302617a139b5",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.ts",
+            "seeds": [
+                {
+                    "id": "6b5287dc-caf3-4330-94d7-0c5c1370fe20",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 245,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "1cce5fb0-cfd4-4c07-8700-4a01234df7b5",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.ts",
+            "seeds": [
+                {
+                    "id": "72747224-b436-461f-a53d-2f9ddeafcfc0",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 70,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote-routing.module.ts",
+            "seeds": [
+                {
+                    "id": "b49c66ef-ae86-4c25-bb16-bb2647988312",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 22,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "75b3832b-e5ac-4d0e-9cc7-863ef3341a05",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.ts",
+            "seeds": [
+                {
+                    "id": "6bdfa145-53d6-4913-a079-d2c7bbdc6088",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 99,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.module.ts",
+            "seeds": [
+                {
+                    "id": "f88baf46-a87a-44cc-9070-eaf4476755f6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 33,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "298363a4-c6a6-4d85-8127-0b1d4abf30a3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "b166315d-ff3b-4cc1-b632-ee5a711e2613",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.ts",
+            "seeds": [
+                {
+                    "id": "34266af7-14e2-470b-9928-b488086211b6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 165,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "2795f4a2-9662-48f6-b153-b5f2b843a2f8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.ts",
+            "seeds": [
+                {
+                    "id": "5220002b-6041-49a5-b89c-eb465a8e9bf1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 120,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "732be73f-9442-4f30-bd45-31ecce598ae3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.ts",
+            "seeds": [
+                {
+                    "id": "475bd4df-44d9-4b54-9cd7-a35922422e3e",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 352,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "88b792fb-8a2c-4ddb-82c1-1fb2db633fa9",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.ts",
+            "seeds": [
+                {
+                    "id": "2d64b621-f5de-46ff-84f0-56cc9c08c1a3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 87,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion-routing.module.ts",
+            "seeds": [
+                {
+                    "id": "fdadb154-8e26-44b6-8def-b232535595c6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 25,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "4086b964-99ec-4087-bc6d-3ebc304c52ba",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.ts",
+            "seeds": [
+                {
+                    "id": "f386ebbf-bb73-4ccc-8f74-cf9312b0cc3c",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 105,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.module.ts",
+            "seeds": [
+                {
+                    "id": "30ec7b35-4acf-4e12-9302-b89291e3066a",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 33,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.spec.ts",
+            "seeds": [
+                {
+                    "id": "f55ddf25-a8c3-47be-978f-26044221e2f8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.html",
+            "seeds": [
+                {
+                    "id": "c292f954-d8d7-4c1b-aec4-1de455914670",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 3,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.scss",
+            "seeds": [
+                {
+                    "id": "51dcb433-f6cc-4f06-a76d-dc314112e4ac",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.html",
+            "seeds": [
+                {
+                    "id": "91ad133c-8014-420f-a3e1-69da3e62091d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 10,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.scss",
+            "seeds": [
+                {
+                    "id": "66058042-0f9d-449d-93e4-f9bd86bc95d3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.html",
+            "seeds": [
+                {
+                    "id": "a5c2b589-174a-4e94-86d9-4603296a6ed9",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 39,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.scss",
+            "seeds": [
+                {
+                    "id": "0e37c25d-5fb7-4cdd-88da-40097233af93",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.html",
+            "seeds": [
+                {
+                    "id": "87ecdf29-7598-4e4f-b33f-e63abe1ed4c8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 19,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.scss",
+            "seeds": [
+                {
+                    "id": "5bfc03ec-8c52-4b55-bf38-4f28b7cdbd5b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.html",
+            "seeds": [
+                {
+                    "id": "cdce3e55-7c5f-4e14-8f5f-a67f49478cec",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 47,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.scss",
+            "seeds": [
+                {
+                    "id": "8a89f67e-2264-41fe-bf5f-eb9b83a41432",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 2,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.scss",
+            "seeds": [
+                {
+                    "id": "9d9d5eb6-3576-45db-8275-eddb3e56d079",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/assets/imgs/icons/quote.svg",
+            "seeds": [
+                {
+                    "id": "3601ed65-ab86-45c3-b482-84c3ec68f72b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 6,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.html",
+            "seeds": [
+                {
+                    "id": "88d8ece0-2dae-4f29-a476-a29c295e82ff",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 25,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.scss",
+            "seeds": [
+                {
+                    "id": "6b6c1769-eb34-406c-80a3-e276ab12e99f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 16,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.html",
+            "seeds": [
+                {
+                    "id": "4e7ed697-8591-420e-8050-c460368a0232",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 16,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.scss",
+            "seeds": [
+                {
+                    "id": "03d5a75b-485b-47ec-b845-7081c1fad9c4",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.html",
+            "seeds": [
+                {
+                    "id": "74a5851f-c8f6-438a-b91e-b7e0921cbc2b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 61,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.scss",
+            "seeds": [
+                {
+                    "id": "7e83d389-5576-4bb7-ae8e-4f6fa569cffc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 24,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.html",
+            "seeds": [
+                {
+                    "id": "6d5857ea-7e9e-412e-b465-59d2f0b57613",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 19,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.scss",
+            "seeds": [
+                {
+                    "id": "c19a208d-bc6d-4cf8-b407-76ae6b4de2b6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.html",
+            "seeds": [
+                {
+                    "id": "95981dc6-a5ea-4610-88ef-cf511b88978d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 49,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.scss",
+            "seeds": [
+                {
+                    "id": "b110d0cc-e30d-4c30-b16d-f30dd17736b2",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 2,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.scss",
+            "seeds": [
+                {
+                    "id": "f61e0939-ff06-4385-9047-9986a91d1396",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 0,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        }
+    ],
+    "fileSeeds": [
+        {
+            "id": "0db3c37e-b638-4221-bb99-c99d9aea43f0",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "9c9d2531-c344-4e44-b5af-cd3c2382eb60",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "fa6a433f-597a-4283-9b07-c279090f2458",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "7e4c3403-2440-4c28-97cb-c9afc46a26d6",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "8753cf80-36ae-4663-b054-7bc8021ddda1",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-question/create-question.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "2986e06e-3be6-4ba5-9bd8-18e89d26d626",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "e173f632-5983-469e-bcd6-f10902be9c1d",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "4be2915d-d7b0-423f-8b29-973508c0d85c",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "71270a54-bfc2-40b7-85ac-fb891077d420",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/create-settings/create-settings.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "431a3f4f-dcc0-4478-bee8-5aa57a5d83f8",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6b158b92-8253-4509-ae79-dd4a1df67f5e",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "304f0a17-f316-4761-ac8f-eec0d9cae8bf",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "d5b2473b-cae2-401f-9d33-4e0638a47c53",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/edit-quote-modal/edit-quote-modal.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "1ab230e0-0243-4092-b65b-cf9a69d3d439",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "fcbcc5bb-c5e3-482c-bed7-1b92f4aae5e5",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "693840aa-3b3d-4628-87b6-b5eaf69b514f",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "d159cb89-f6f8-4fb9-a297-85f7983cefe2",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/preview/preview.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "dcd0d2a7-9d55-4298-ba5f-00f21fae50e4",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote-routing.module.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "8efeeb2a-9b45-48cb-81d0-873e011938da",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "e67ce700-5f96-4138-a001-d8f82367d119",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "21d74637-8e2b-4575-88c7-8f3377fcf5d1",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "05322604-354c-4c89-9027-69dbfaa71b11",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "d6e4f440-ad58-4237-a45b-05c118c9e6c9",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/quote/quote.module.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "0e52e2ce-6362-4578-92c7-d79eb3a8a751",
+            "file": "smartapp/frontend/src/app/shared/components/quote-card",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6a8832eb-f81e-4bed-8c29-4abef94df32a",
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.html",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "771b23f3-57b4-43e1-863a-c82c9f9c494d",
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.scss",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "8976a1c0-977e-4cbc-9f2d-fbf351b99fc9",
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.spec.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "1eb6cb2e-2680-43cd-a064-31ece0be3740",
+            "file": "smartapp/frontend/src/app/shared/components/quote-card/quote-card.component.ts",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6b75945b-f6eb-41f2-9cb2-3161a24b4fb7",
+            "file": "smartapp/frontend/src/assets/imgs/icons/quote.svg",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "3fcfc867-2e86-485d-b061-4271d211e19e",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "0b1a2c60-ee9a-4bc3-ad51-c78d86176170",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "f601781b-5a9b-4853-b25f-06d616d2e218",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "fbbf04c4-895d-406e-ace0-8384f8141141",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "5f031d4c-7e93-4037-a5d8-9a0bb0df888b",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-question/create-question.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6432f087-bc1d-491d-a432-9a9d17a17b03",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "cfb43a8e-d98f-4b75-a159-503d5bcd13bf",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "dfce35f3-f16c-4375-b6e4-31df4d9e262b",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "10089ae4-4c10-4aa8-81f3-dbea4452a1a9",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/create-settings/create-settings.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "203dc7f3-e637-43c8-8def-e508bdc809ae",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "838ea832-69fb-4583-af30-65f708aa47e9",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "7b3a1924-c6d1-4283-aecd-2a58db5f724b",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "8743d748-d03c-4c7f-89ec-f1fee1b0d636",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/edit-suggestion-modal/edit-suggestion-modal.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "323bcea0-45b1-49fe-b05e-14d33627fd42",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "949316ad-66da-4eb3-9f48-816657a19929",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "5d5c26a0-0e83-477c-96fc-fc6ee87ff8e9",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "49f354e6-20db-473f-a780-59b0397c01cc",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/preview/preview.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "3dd7e2f8-1c06-4dc6-9038-e07df307d828",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion-routing.module.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "3f6053ab-dcaf-45d8-9221-6f41dcca237b",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "0acaa7c8-3996-4d18-886d-e04aba2b0d64",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6aa7547d-c4e9-4883-a463-a50fbef174d6",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "1f285cca-ff8f-487b-909e-99594f9a50df",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "aab80258-fc11-48b6-b588-8cb18ee4ddff",
+            "file": "smartapp/frontend/src/app/modules/posts/modules/suggestion/suggestion.module.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "21c44a85-4866-4714-89dc-a0dd3006ec07",
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "a6a0e8d5-bbe0-4ee7-b175-5c1086fc3cfe",
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.html",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "86522f9f-8a50-4c16-a3b0-e172660e9dac",
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.scss",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "278d8738-367f-4489-9732-9157dfbe7f57",
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.spec.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "865759f1-26fe-4bcd-9709-c09feccbf9f6",
+            "file": "smartapp/frontend/src/app/shared/components/suggestion-card/suggestion-card.component.ts",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "479585b7-030e-4202-afcc-7c25de278b6b",
+            "file": "smartapp/backend/Models/Quote.cs",
+            "featureKey": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "413e6803-2ed4-42e6-b5ce-9c9533be14b1",
+            "file": "smartapp/backend/Models/Suggestion.cs",
+            "featureKey": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "2cc927b0-3787-4876-ab4f-aa2b13054372",
+            "file": "smartapp/backend/Models/JoinTables/UserCardLikes.cs",
+            "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        }
+    ]
+}

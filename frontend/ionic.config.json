@@ -1,7 +1,0 @@
-{
-  "name": "Hive",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}

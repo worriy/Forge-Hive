@@ -30,6 +30,14 @@ resources/ios
 www/
 $RECYCLE.BIN/
 
+## Backend
+.vs
+bin
+obj
+
+
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+global.json

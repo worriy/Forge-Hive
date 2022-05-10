@@ -1,0 +1,26 @@
+@import '/src/theme/variables.scss';
+
+.generalmood_card {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  border-radius: 10px;
+  font-weight: bold;
+  .header {
+    color: $secondary-color;
+    border-bottom: 1px solid $light-grey;
+    padding: 1.1em;
+  }
+
+  .content {
+    width: 100%;
+    .mood_text {
+      margin: 1.5em;
+      font-size: large;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+}

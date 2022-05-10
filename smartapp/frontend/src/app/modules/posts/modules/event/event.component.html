@@ -1,0 +1,48 @@
+<ion-content>
+  <!-- Header -->
+  <div class="header header-small has-main-color-bg">
+    <div class="header-left">
+      <div class="view_title">{{ "event.questionViewTitle" | translate }}</div>
+    </div>
+    <div class="header-center">
+      <div class="view_title">{{ "event.questionViewTitle" | translate }}</div>
+    </div>
+    <div class="header-right">
+      <div class="header-item">
+        <a (click)="onDiscard()">
+          <img src="assets/imgs/icons/header/close-white.svg" width="32px" height="32px" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Main -->
+  
+  <ng-container [ngSwitch]="step">
+    <event-create-question 
+      *ngSwitchCase="steps.CREATE_QUESTION" 
+      (picture)="setPicture($event)" 
+      (changes)="applyChanges($event)"
+      (utilsChange)="utils = $event"
+      [vm]="createEventVm" 
+      [utils]="utils"
+    ></event-create-question>
+    <event-create-settings 
+      *ngSwitchCase="steps.CREATE_SETTINGS" 
+      (changes)="applyChanges($event)" 
+      (utilsChange)="utils = $event"
+      [vm]="createEventVm"
+      [utils]="utils"
+    ></event-create-settings>
+    <event-preview 
+      [picture]="picture" 
+      [card]="createEventVm" 
+      [utils]="utils"
+      *ngSwitchCase="steps.PREVIEW"></event-preview>
+  </ng-container>
+  
+</ion-content>
+<ion-footer class="with-tabs" *ngIf="step != steps.PREVIEW">
+<div *ngIf="step != steps.CREATE_QUESTION" tappable class="button" (click)="previousStep()">{{ "event.previous" | translate }}</div>
+<div *ngIf="step == steps.CREATE_QUESTION" tappable class="button" (click)="onDiscard()">{{ "commons.cancel" | translate }}</div>
+<button class="button" (click)="nextStep()">{{ "event.next" | translate }}</button>
+</ion-footer>

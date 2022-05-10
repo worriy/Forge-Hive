@@ -1,0 +1,58 @@
+{
+    "isAbsolutePath": false,
+    "resourcesPath": ".mobioos-forge/customization-file-resources",
+    "functionalityConfiguration": [
+        "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+        "6a22d749-1b1d-4e1c-a6b1-a0b1aa9ed8db",
+        "797a42b4-e5d0-4157-bcbf-c8e8a95ebfa2",
+        "214c6a31-8c2f-42fe-8ef3-b719bc29b18a",
+        "42a35ed1-c417-4028-bfec-320e632201a1",
+        "9d326605-ec24-4906-8404-b62d06ed1907",
+        "679bed3b-7af0-41d8-9ffc-420924bf9180",
+        "317a9a2f-8a56-4964-b391-39b67db9e38a"
+    ],
+    "fileResourceConfiguration": [
+        {
+            "key": "b553bdcb-4e22-4278-bbe8-9300bd395db2",
+            "value": "smartapp/frontend/resources",
+            "fileName": "h-icon.jpg"
+        },
+        {
+            "key": "b3676535-a065-48b7-b8d1-ddf5e07f6a82",
+            "value": "smartapp/frontend/resources",
+            "fileName": "h-splash.jpg"
+        },
+        {
+            "key": "3705478f-ea82-44ad-9ed7-c869c03d6c43",
+            "value": "smartapp/backend/wwwroot/uploads",
+            "fileName": "idea.jpg"
+        },
+        {
+            "key": "c9e7dd99-c764-4f3e-a026-3e0e8af41e71",
+            "value": "smartapp/backend/wwwroot/uploads",
+            "fileName": "event.jpg"
+        },
+        {
+            "key": "c8b50b7c-e3cc-4fba-bc67-3557bfb5d53c",
+            "value": "smartapp/backend/wwwroot/uploads",
+            "fileName": "question.jpg"
+        }
+    ],
+    "textResourceConfiguration": [
+        {
+            "key": "ef05521e-882d-4bd5-b9df-671a8beae473",
+            "value": "Forge-variant"
+        }
+    ],
+    "assetResourceConfiguration": [],
+    "colorResourceConfiguration": [
+        {
+            "key": "149005ef-e48b-4abf-aeb8-047183e9a43e",
+            "value": "#ff801f"
+        },
+        {
+            "key": "fb96702f-69e2-4186-8b03-e4b2fb4ad4ed",
+            "value": "#b75e15"
+        }
+    ]
+}

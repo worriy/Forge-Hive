@@ -1,0 +1,67 @@
+<ng-container *ngIf="card">
+  <!-- CARDS display-->
+  <div class="animated_card_container {{active}}">
+    
+    <div class="card with-background inset_content">
+      <div class="picture" [ngStyle]="{ 'background-image': 'url(data:image/png;base64,' + card.picture + ')'}">
+        <ion-spinner *ngIf="!card.picture" name="crescent"></ion-spinner>
+        <div class="content-box">
+          <div class="title">
+            {{ card?.content }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer smiley-container">
+        <div class="smiley-item" (click)="onAnswer('Sunglasses')">
+          <img src="assets/imgs/icons/mood/sunglasses.svg" />
+        </div>
+        <div class="smiley-item" (click)="onAnswer('Happy')">
+          <img src="assets/imgs/icons/mood/happy.svg" />
+        </div>
+        <div class="smiley-item" (click)="onAnswer('Indifferent')">
+          <img src="assets/imgs/icons/mood/indifferent.svg" />
+        </div>
+        <div class="smiley-item" (click)="onAnswer('Muted')">
+          <img src="assets/imgs/icons/mood/muted.svg" />
+        </div>
+        <div class="smiley-item" (click)="onAnswer('Sad')">
+          <img src="assets/imgs/icons/mood/sad.svg" />
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+
+  <!-- LIST display -->
+  <div class="list_item">
+    <div class="content-box">
+      <div class="title">
+        {{ card?.content }}
+      </div>
+    </div>
+
+    <div class="picture" [ngStyle]="{ 'background-image': 'url(data:image/png;base64,' + card.picture + ')'}">
+      <ion-spinner *ngIf="!card.picture" name="crescent"></ion-spinner>
+    </div> 
+
+    <div class="footer smiley-container">
+      <div class="smiley-item" (click)="onAnswer('Sunglasses')">
+        <img src="assets/imgs/icons/mood/sunglasses.svg" />
+      </div>
+      <div class="smiley-item" (click)="onAnswer('Happy')">
+        <img src="assets/imgs/icons/mood/happy.svg" />
+      </div>
+      <div class="smiley-item" (click)="onAnswer('Indifferent')">
+        <img src="assets/imgs/icons/mood/indifferent.svg" />
+      </div>
+      <div class="smiley-item" (click)="onAnswer('Muted')">
+        <img src="assets/imgs/icons/mood/muted.svg" />
+      </div>
+      <div class="smiley-item" (click)="onAnswer('Sad')">
+        <img src="assets/imgs/icons/mood/sad.svg" />
+      </div>
+    </div>
+
+  </div>
+</ng-container>

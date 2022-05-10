@@ -1,0 +1,19 @@
+<div class="preview-container">
+  <div class="card with-background color">
+    <div class="content-box">
+      <img src="assets/imgs/icons/quote.svg" width="50" height="50" style="margin-right:3%;" >
+      <br>
+      <div class="title">
+        {{ card?.content }}
+      </div>
+      <div class="subtitle">
+        <span text-capitalize>{{ "commons.authorPreText" | translate }}{{ user?.firstname }} {{ user?.lastname }}</span> 
+        <span>{{ "commons.endDatePreText" | translate }}{{ card?.endDate | date:'MMMM dd, yyyy' }}</span>  
+        <span>{{utils.targets}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer_actions">
+  <div tappable class="button is-primary" (click)="save()">{{ "idea.previewLayoutSaveAction" | translate }}</div>
+</div>

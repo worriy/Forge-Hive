@@ -1,0 +1,25 @@
+<div class="preview-container">
+  <div class="card">
+    <div class="picture" *ngIf="picture" [ngStyle]="{ 'background-image': 'url(' + picture + ')'}"></div>
+
+    <div class="content-box">
+      <div class="title">
+        {{ card?.content }}
+      </div>
+      <div class="subtitle">
+        <span text-capitalize>{{ "commons.authorPreText" | translate }}{{ user?.firstname }} {{ user?.lastname }}</span> 
+        <span>{{ "commons.endDatePreText" | translate }}{{ card?.endDate | date:'MMMM dd, yyyy' }}</span>  
+        <span>{{utils.targets}}</span>
+      </div>
+    </div>
+    <div class="footer two-buttons">
+      <div class="button">{{ "idea.yes" | translate }}</div>
+      <div class="button">{{ "idea.no" | translate }}</div>
+    </div>
+  </div>
+
+  
+</div>
+<div class="footer_actions">
+  <div tappable class="button is-primary" (click)="save()">{{ "idea.previewLayoutSaveAction" | translate }}</div>
+</div>

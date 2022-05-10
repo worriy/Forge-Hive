@@ -1,0 +1,9 @@
+<div *ngIf="generalMood && generalMood.value != 0" class="generalmood_card">
+  <div class="header">
+    {{ "mood.generalMood" | translate }}
+  </div>
+  <div class="content">
+    <div class="mood_text">{{mood}}</div>
+    <img src="assets/imgs/{{generalMood?.moodName}}.png" />
+  </div>
+</div>

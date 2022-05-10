@@ -1,0 +1,64 @@
+<div *ngIf="bestPost; then showBestPost else createPost "></div>
+<ng-template #showBestPost>
+  <div class="list_item reporting">
+
+    <div class="header">
+      {{ "reporting.reportCategory" | translate }}
+    </div>
+    
+    <div class="content-box">
+      <div class="title">
+        {{ bestPost?.content }}
+      </div>
+      <div class="subtitle">
+        <span text-capitalize>{{ "commons.authorPreText" | translate }}{{ user?.firstname }} {{ bestPost?.author }}</span>
+      </div>
+    </div>
+
+    <div class="reporting">
+
+      <div class="report-container progress">
+            
+        <div class="report-content">
+          <canvas #doughnutCanvas ></canvas>
+          <div class="report-answers" >
+            <div class="report-answer" *ngFor="let value of values" >
+              <span class="report-color " [ngStyle]="{'background-color': value.color}"></span>
+              <span class="report-text" style="color: #000;">{{value.result.choice.name}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer report_tabs">
+      <div class="report-tab">
+        <span class="text">{{ "reporting.view" | translate }}{{bestPost?.views > 1 ? "s" : ""}}</span>
+        <span class="number">{{ bestPost?.views }}</span>
+      </div>
+      <div class="report-tab">
+        <span class="text">{{ "reporting.answer" | translate }}{{bestPost?.answers > 1 ? "s" : ""}}</span>
+        <span class="number">{{ bestPost?.answers }}</span>
+      </div>
+      <div class="report-tab">
+        <span class="text">{{ "reporting.like" | translate }}{{bestPost?.likes > 1 ? "s" : ""}}</span>
+        <span class="number">{{ bestPost?.likes }}</span>
+      </div>
+    </div>
+
+  </div>
+</ng-template>
+
+<ng-template #createPost>
+  <div class="empty_content_card">
+    <div class="header">
+      {{ "posts.beBestPost" | translate }}
+    </div>
+    <div class="info_text">
+      {{ "posts.beBestPostMessage" | translate }}
+    </div>
+    <div class="footer">
+      <button class="button" (click)="onToPosts()">{{ "posts.create" | translate }}</button>
+    </div>
+  </div>
+</ng-template>

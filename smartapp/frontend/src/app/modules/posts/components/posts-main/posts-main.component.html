@@ -1,0 +1,72 @@
+<div class="header header-big has-main-color-bg with-triangle">
+  <div class="header-left">
+    <div class="view_title">{{ "posts.postsConcernTitle" | translate }}</div>
+  </div>
+  <div class="header-right">
+    <div class="header-item">
+      <a (click)="toChooseNewPostCategory()">
+        <img src="assets/imgs/icons/new-post.svg" width="32px" height="32px" />
+      </a>       
+    </div>
+  </div>
+</div>
+
+<!-- Main -->
+<div class="main with-triangle">
+  <div *ngIf="posts">
+    <div *ngIf="posts?.length == 0; then emptyPosts else fullPosts"></div>
+    <ng-template #emptyPosts>
+      <div class="empty_content_card ion-margin">
+        <div class="header">
+          {{ "posts.noContent" | translate }}
+        </div>
+        <div class="info_text">
+          {{ "posts.startCreate" | translate }}
+        </div>
+        <div class="footer">
+          <button class="button" (click)="toChooseNewPostCategory()">{{ "posts.create" | translate }}</button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #fullPosts>
+      <posts-top-posts
+      (deleted)="deleteFromTopPost($event)"
+      [events]="eventsSubject.asObservable()"
+      >
+
+      </posts-top-posts>
+
+      <div class="posts">
+        <div class="tabs-post">
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'All'}" (click)="postType = 'All'" >{{ "posts.all" | translate }}</div>
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'Idea'}" (click)="postType = 'Idea'">{{ "posts.ideas" | translate }} </div>
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'Question'}" (click)="postType = 'Question'">{{ "posts.questions" | translate }} </div>
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'Event'}" (click)="postType = 'Event'">{{ "posts.events" | translate }} </div>  
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'Quote'}" (click)="postType = 'Quote'">{{ "posts.quotes" | translate }} </div>
+          <div class="tab-post" [ngClass]="{'is-active': postType == 'Suggestion'}" (click)="postType = 'Suggestion'">{{ "posts.suggestions" | translate }} </div>    
+        </div>
+      </div>
+
+      <ion-list>
+        <ng-container *ngFor="let post of posts">
+          <ion-item *ngIf="postType == 'All' || post.type == postType">
+            <ion-label (click)="onShowPostDetailsModal(post)">
+              <h2><strong>{{ post.content }}</strong></h2>
+              <p>
+                <span>{{ "commons.endDatePreText" | translate }}{{ post.endDate | date:'MMMM dd, yyyy' }}</span> •
+                <span>{{ onGetStatus(post.publicationDate,post.endDate)}}</span>
+              </p>
+            </ion-label>
+            <ion-icon 
+              *ngIf="post.type != 'Mood'" 
+              name="ellipsis-vertical" 
+              slot="end" 
+              (click)="onPresentOptionsMenu(post)">
+            </ion-icon>
+          </ion-item>
+        </ng-container>
+      </ion-list>
+
+    </ng-template>
+  </div>
+</div>

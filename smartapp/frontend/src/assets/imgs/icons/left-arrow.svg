@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="All" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Post---Survey---Preview" transform="translate(-24.000000, -72.000000)" fill="#79D0FD" fill-rule="nonzero">
+            <path d="M26.4142136,79 L31.7071068,73.7071068 C32.0976311,73.3165825 32.0976311,72.6834175 31.7071068,72.2928932 C31.3165825,71.9023689 30.6834175,71.9023689 30.2928932,72.2928932 L24.2928932,78.2928932 C23.9023689,78.6834175 23.9023689,79.3165825 24.2928932,79.7071068 L30.2928932,85.7071068 C30.6834175,86.0976311 31.3165825,86.0976311 31.7071068,85.7071068 C32.0976311,85.3165825 32.0976311,84.6834175 31.7071068,84.2928932 L26.4142136,79 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

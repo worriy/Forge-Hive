@@ -1,0 +1,25 @@
+<form class="ion-margin" [formGroup]="questionForm">
+  <ion-textarea rows="5" formControlName="content" maxLength=200 placeholder="{{ 'suggestion.suggestionContent' | translate }}" name="idea"></ion-textarea>
+
+  <ion-text class="ion-margin-top">
+    <h6>
+      {{ "idea.uploadPic" | translate }}
+    </h6>
+  </ion-text>
+  <div class="select-post-picture ion-margin-top">
+    <div 
+      class="picture-box custom ion-margin-end" 
+      [ngStyle]="{ 'background-image': smallImg ? 'url(' + smallImg + ')' : white}" 
+      [ngClass]="{'is-selected': pictureSelected}"
+      (click)="selectImageSource()"
+    >
+      <ion-icon class="icon" name="camera"></ion-icon>
+    </div>
+    <div 
+      class="picture-box default" 
+      [ngStyle]="{ 'background-image': defaultPicture ? 'url(' + defaultPicture + ')' : white}"
+      [ngClass]="{'is-selected': !pictureSelected}"
+      (click)="selectDefaultPicture()">
+    </div>
+  </div>
+</form>

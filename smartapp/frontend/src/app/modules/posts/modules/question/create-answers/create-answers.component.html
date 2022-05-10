@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="answersForm">
+          
+  <div style="padding-bottom: 50px">
+    <div *ngFor="let i of numberAnswers;">
+      <ion-item *ngIf="i < count_answers">
+        <ion-label floating>{{'question.answer' | translate}} {{i+1}}</ion-label>
+        <ion-input formControlName="answer{{i+1}}" maxLength=10 type="text" name="answer{{i+1}}"></ion-input>
+      </ion-item>
+    </div>
+    <button class="button" (click)="addNumberAnswers()" *ngIf="visibleAdd">{{ "question.add" | translate }}</button>
+  </div>
+</form>

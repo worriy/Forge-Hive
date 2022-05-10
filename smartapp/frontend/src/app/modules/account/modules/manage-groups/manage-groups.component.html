@@ -1,0 +1,90 @@
+<ion-content class="ManageGroups">
+    
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onReturn()" class="Toolbar__button">
+        <img src="assets/imgs/icons/left-arrow.svg" width="16px" height="16px" alt="">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <a type="submit" (click)="onShowCreateGroupModal()" class="Toolbar__button">{{ "manageGroups.add" | translate }}</a>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "manageGroups.groups" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="AppMain has-grey-bg">
+    <div class="Main" >
+      <div class="View">
+        <!-- If there's no group -->
+        <div *ngIf="groups?.length == 0 && myGroups?.length == 0; then emptyGroup"></div> 
+        <ng-template #emptyGroup>
+          <div class="empty_content_card ion-margin">
+            <div class="header">
+              {{ "manageGroups.noGroups" | translate }}
+            </div>
+            <div class="info_text">
+              {{ "manageGroups.notMemberYet" | translate }}
+            </div>
+            <div class="footer">
+              <button class="button" (click)="onShowCreateGroupModal()">{{ "manageGroups.create" | translate }}</button>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <ng-container *ngIf="groups?.length > 0">
+        <h3 class="ion-padding">{{ "manageGroups.myGroups" | translate }}</h3>
+        
+        <ion-list lines="none" class="ion-no-padding">
+          <ion-item *ngFor="let group of groups">
+            <ion-label (click)="onToGroupDetails(group)">
+              <h2><strong>{{group.name}}</strong></h2>
+              <p> 
+                <span *ngIf="group.numberMembers > 1">{{group.numberMembers}} {{ "manageGroups.members" | translate }} </span>
+                <span *ngIf="group.numberMembers <= 1">{{group.numberMembers}} {{ "manageGroups.member" | translate }}</span> •
+                <span>{{group.city}}</span> •
+                <span>{{group.country}}</span>
+              </p>
+            </ion-label>
+            <ion-icon 
+              name="ellipsis-vertical" 
+              slot="end" 
+              (click)="onPresentOptionsDeleteGroupMenu(group)">
+            </ion-icon>
+          </ion-item>
+        </ion-list>
+      </ng-container>
+      <ng-container *ngIf="myGroups?.length > 0">
+
+        <h3 class="ion-padding">{{ "manageGroups.otherGroups" | translate }}</h3>
+
+        <ion-list lines="none" class="ion-no-padding">
+          <ion-item *ngFor="let group of myGroups">
+            <ion-label (click)="onToGroupDetails(group)">
+              <h2><strong>{{group.name}}</strong></h2>
+              <p> 
+                <span *ngIf="group.numberMembers > 1">{{group.numberMembers}} {{ "manageGroups.members" | translate }} </span>
+                <span *ngIf="group.numberMembers <= 1">{{group.numberMembers}} {{ "manageGroups.member" | translate }}</span> •
+                <span>{{group.city}}</span> •
+                <span>{{group.country}}</span>
+              </p>
+            </ion-label>
+            <ion-icon 
+              name="ellipsis-vertical" 
+              slot="end" 
+              (click)="onPresentOptionsLeaveGroupMenu(myGroup)">
+            </ion-icon>
+          </ion-item>
+        </ion-list>
+      </ng-container>
+    </div>
+  </div>
+</ion-content>

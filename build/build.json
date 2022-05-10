@@ -1,0 +1,642 @@
+{
+    "options": [
+      {
+        "enabled": false,
+        "definition": {
+          "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+        },
+        "inputs": {
+          "branchFilters": "[\"+refs/heads/*\"]",
+          "additionalFields": "{}"
+        }
+      },
+      {
+        "enabled": false,
+        "definition": {
+          "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+        },
+        "inputs": {
+          "workItemType": "Issue",
+          "assignToRequestor": "true",
+          "additionalFields": "{}"
+        }
+      }
+    ],
+    "triggers": [
+      {
+        "branchFilters": [
+          "-refs/heads/master",
+          "+refs/heads/bse-*"
+        ],
+        "pathFilters": [
+          
+        ],
+        "batchChanges": false,
+        "maxConcurrentBuildsPerBranch": 1,
+        "pollingInterval": 0,
+        "triggerType": 2
+      }
+    ],
+    "variables": {
+      "app-name": {
+        "value": "hiveTestApp",
+        "allowOverride": true
+      },
+      "system.debug": {
+        "value": "false",
+        "allowOverride": true
+      }
+    },
+    "properties": {
+      
+    },
+    "tags": [
+      
+    ],
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/MobioosAI/ba99c102-55c3-4677-8b94-93b664554a10/_apis/build/Definitions/1163?revision=1"
+      },
+      "web": {
+        "href": "https://dev.azure.com/MobioosAI/ba99c102-55c3-4677-8b94-93b664554a10/_build/definition?definitionId=1163"
+      },
+      "editor": {
+        "href": "https://dev.azure.com/MobioosAI/ba99c102-55c3-4677-8b94-93b664554a10/_build/designer?id=1163&_a=edit-build-definition"
+      },
+      "badge": {
+        "href": "https://dev.azure.com/MobioosAI/ba99c102-55c3-4677-8b94-93b664554a10/_apis/build/status/1163"
+      }
+    },
+    "jobAuthorizationScope": 1,
+    "jobTimeoutInMinutes": 60,
+    "jobCancelTimeoutInMinutes": 5,
+    "process": {
+      "phases": [
+        {
+          "steps": [
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "Use Java 8",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "c0e0b74f-0931-47c7-ac27-7c5a19456a36",
+                "versionSpec": "0.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "versionSpec": "8",
+                "jdkArchitectureOption": "x64",
+                "jdkSourceOption": "PreInstalled",
+                "jdkFile": "",
+                "azureResourceManagerEndpoint": "",
+                "azureStorageAccountName": "",
+                "azureContainerName": "",
+                "azureCommonVirtualFile": "",
+                "jdkDestinationDirectory": "",
+                "cleanDestinationDirectory": "true"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": true,
+              "alwaysRun": false,
+              "displayName": "[FE] unzip package file",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "script": "unzip -o \"*.zip\"\ncd smartapp/frontend/\nchmod -R 777 *\nunzip -o \"*.zip\"\nchmod -R 777 *\nls\n",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] node version",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "script": "sudo n 12.10.0",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] npm clean cache",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "fe47e961-9fa8-4106-8639-368c022d43ad",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "command": "custom",
+                "workingDir": "smartapp/frontend",
+                "verbose": "false",
+                "customCommand": "cache clean --force ",
+                "customRegistry": "useNpmrc",
+                "customFeed": "",
+                "customEndpoint": "",
+                "publishRegistry": "useExternalRegistry",
+                "publishFeed": "",
+                "publishPackageMetadata": "true",
+                "publishEndpoint": ""
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] npm install",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "fe47e961-9fa8-4106-8639-368c022d43ad",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "command": "install",
+                "workingDir": "smartapp/frontend",
+                "verbose": "false",
+                "customCommand": "install -g",
+                "customRegistry": "useNpmrc",
+                "customFeed": "",
+                "customEndpoint": "",
+                "publishRegistry": "useExternalRegistry",
+                "publishFeed": "",
+                "publishPackageMetadata": "true",
+                "publishEndpoint": ""
+              }
+            },
+            
+            {
+              "environment": {
+                
+              },
+              "enabled": false,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Ionic login",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e144b169-0587-4146-a3fc-d9d3432a512a",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "ionicCommand": "login",
+                "ionicArgs": "mobioosdev@gmail.com P@ssw0rd",
+                "ionicVersion": "6.11.8",
+                "cordovaVersion": "",
+                "cwd": "smartapp/frontend"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": false,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Ionic logout",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e144b169-0587-4146-a3fc-d9d3432a512a",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "ionicCommand": "logout",
+                "ionicArgs": "",
+                "ionicVersion": "6.11.8",
+                "cordovaVersion": "",
+                "cwd": "smartapp/frontend"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Ionic rm android platform",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e144b169-0587-4146-a3fc-d9d3432a512a",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "ionicCommand": "cordova platform rm android ",
+                "ionicArgs": "",
+                "ionicVersion": "",
+                "cordovaVersion": "9.0.0",
+                "cwd": "smartapp/frontend"
+              }
+            },
+            {
+              "environment": {},
+              "enabled": true,
+              "continueOnError": true,
+              "alwaysRun": false,
+              "displayName": "[FE] cordova resource generator install",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                  "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                  "versionSpec": "2.*",
+                  "definitionType": "task"
+              },
+              "inputs": {
+                  "script": "sudo npm i cordova-res-generator -g",
+                  "workingDirectory": "smartapp/frontend",
+                  "failOnStderr": "false"
+              }
+            },
+            {
+                "environment": {},
+                "enabled": true,
+                "continueOnError": true,
+                "alwaysRun": false,
+                "displayName": "[FE] cordova resource generator run",
+                "timeoutInMinutes": 0,
+                "condition": "succeeded()",
+                "task": {
+                    "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                    "versionSpec": "2.*",
+                    "definitionType": "task"
+                },
+                "inputs": {
+                    "script": "sudo crgen",
+                    "workingDirectory": "smartapp/frontend",
+                    "failOnStderr": "false"
+                }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": false,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Ionic add android platform",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e144b169-0587-4146-a3fc-d9d3432a512a",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "ionicCommand": "cordova platform add android",
+                "ionicArgs": "",
+                "ionicVersion": "",
+                "cordovaVersion": "9.0.0",
+                "cwd": "smartapp/frontend"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Ionic build android",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e144b169-0587-4146-a3fc-d9d3432a512a",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "ionicCommand": "cordova build android",
+                "ionicArgs": "",
+                "ionicVersion": "",
+                "cordovaVersion": "9.0.0",
+                "cwd": "smartapp/frontend"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": false,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Cordova Build android",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "70e94267-15dc-434d-8973-023d766825d7",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "platform": "android",
+                "configuration": " $(BuildConfiguration)",
+                "archs": "",
+                "cordovaVersion": "7.1.0",
+                "antBuild": "false",
+                "keystoreFile": "",
+                "keystorePass": "",
+                "keystoreAlias": "",
+                "keyPass": "",
+                "iosSignMethod": "file",
+                "iosSigningIdentity": "",
+                "p12": "",
+                "p12pwd": "",
+                "unlockDefaultKeychain": "false",
+                "defaultKeychainPassword": "",
+                "provProfileUuid": "",
+                "provProfile": "",
+                "removeProfile": "false",
+                "xcodeDeveloperDir": "",
+                "windowsAppx": "",
+                "windowsPhoneOnly": "false",
+                "windowsOnly": "false",
+                "cordovaArgs": "",
+                "cwd": "smartapp/frontend",
+                "outputPattern": "\"$(Build.ArtifactStagingDirectory)\" ",
+                "targetEmulator": "false"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] copy files to: $(Build.ArtifactStagingDirectory)",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "5bfb729a-a7c8-4a78-a7c3-8d717bb7c13c",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "SourceFolder": "smartapp/frontend/platforms/android/app/build/outputs/apk",
+                "Contents": "**/*.apk",
+                "TargetFolder": "$(Build.ArtifactStagingDirectory)",
+                "CleanTargetFolder": "true",
+                "OverWrite": "true",
+                "flattenFolders": "true",
+                "preserveTimestamp": "false",
+                "retryCount": "0"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "rename apk",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "versionSpec": "3.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "mv *.apk $(app-name).apk\n",
+                "workingDirectory": "$(Build.ArtifactStagingDirectory)",
+                "failOnStderr": "false",
+                "noProfile": "true",
+                "noRc": "true"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[FE] Publish Artifact: android",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "2ff763a7-ce83-4e1f-bc89-0ae63477cebe",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "PathtoPublish": "$(Build.ArtifactStagingDirectory)",
+                "ArtifactName": "$(build.buildNumber)",
+                "ArtifactType": "Container",
+                "TargetPath": "",
+                "Parallel": "false",
+                "ParallelCount": "8",
+                "FileCopyOptions": ""
+              }
+            }
+          ],
+          "name": "Frontend job",
+          "refName": "Job_1",
+          "condition": "succeeded()",
+          "target": {
+            "executionOptions": {
+              "type": 0
+            },
+            "allowScriptsAuthAccessOption": false,
+            "type": 1
+          },
+          "jobAuthorizationScope": 1
+        },
+        {
+          "dependencies": [
+            {
+              "scope": "Job_1",
+              "event": "Completed"
+            }
+          ],
+          "steps": [
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": true,
+              "alwaysRun": false,
+              "displayName": "[BE] unzip package file copy",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "script": "unzip -o \"*.zip\"\ncd smartapp/backend/\nchmod -R 777 *\nunzip -o \"*.zip\"\nchmod -R 777 *\nls",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            },
+            {
+              "environment": {
+                
+              },
+              "enabled": true,
+              "continueOnError": false,
+              "alwaysRun": false,
+              "displayName": "[BE]  Docker Build",
+              "timeoutInMinutes": 0,
+              "condition": "succeeded()",
+              "task": {
+                "id": "e28912f1-0114-4464-802a-a3a35437fd16",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+              },
+              "inputs": {
+                "containerRegistry": "1e6009f1-d384-4fb7-aa5d-22a7b38186d0",
+                "repository": "BackendContainer",
+                "command": "buildAndPush",
+                "Dockerfile": "smartapp/backend/Dockerfile",
+                "buildContext": "smartapp/backend",
+                "tags": "AspNetCore_$(Build.BuildId)",
+                "arguments": "",
+                "addPipelineData": "true",
+                "container": ""
+              }
+            }
+          ],
+          "name": "Backend job",
+          "refName": "Job_2",
+          "condition": "succeeded()",
+          "target": {
+            "executionOptions": {
+              "type": 0
+            },
+            "allowScriptsAuthAccessOption": false,
+            "type": 1
+          },
+          "jobAuthorizationScope": 1
+        }
+      ],
+      "target": {
+        "agentSpecification": {
+          "identifier": "ubuntu-18.04"
+        }
+      },
+      "type": 1
+    },
+    "repository": {
+      "properties": {
+        "labelSources": "0",
+        "labelSourcesFormat": "$(build.buildNumber)",
+        "reportBuildStatus": "true",
+        "fetchDepth": "0",
+        "cleanOptions": "0",
+        "gitLfsSupport": "false",
+        "skipSyncSource": "false",
+        "checkoutNestedSubmodules": "false"
+      },
+      "id": "cb1a7e69-54b5-44cb-acaa-40215c8723b8",
+      "type": "TfsGit",
+      "name": "Default",
+      "url": "https://dev.azure.com/MobioosAI/MobioosBSE-Dev/_git/Default",
+      "defaultBranch": "refs/heads/master",
+      "clean": null,
+      "checkoutSubmodules": false
+    },
+    "processParameters": {
+      
+    },
+    "quality": 1,
+    "authoredBy": {
+      "displayName": "Mourad Aissani",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/Aa456aff4-81db-4404-bb9f-0042e5ee73ac/_apis/Identities/1a324f4d-c2e9-640d-adb8-d3d98fe2f865",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/MobioosAI/_apis/GraphProfile/MemberAvatars/aad.MWEzMjRmNGQtYzJlOS03NDBkLWFkYjgtZDNkOThmZTJmODY1"
+        }
+      },
+      "id": "1a324f4d-c2e9-640d-adb8-d3d98fe2f865",
+      "uniqueName": "Mourad.Aissani@mobioos.ai",
+      "imageUrl": "https://dev.azure.com/MobioosAI/_apis/GraphProfile/MemberAvatars/aad.MWEzMjRmNGQtYzJlOS03NDBkLWFkYjgtZDNkOThmZTJmODY1",
+      "descriptor": "aad.MWEzMjRmNGQtYzJlOS03NDBkLWFkYjgtZDNkOThmZTJmODY1"
+    },
+    "drafts": [
+      
+    ],
+    "queue": {
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/MobioosAI/_apis/build/Queues/30"
+        }
+      },
+      "id": 30,
+      "name": "Azure Pipelines",
+      "url": "https://dev.azure.com/MobioosAI/_apis/build/Queues/30",
+      "pool": {
+        "id": 9,
+        "name": "Azure Pipelines",
+        "isHosted": true
+      }
+    },
+    "id": 1163,
+    "name": "hive-pipeline-template-import-import-import-import-import-import-import",
+    "url": "https://dev.azure.com/MobioosAI/ba99c102-55c3-4677-8b94-93b664554a10/_apis/build/Definitions/1163?revision=1",
+    "uri": "vstfs:///Build/Definition/1163",
+    "path": "\\hive-smartapp",
+    "type": 2,
+    "queueStatus": 0,
+    "revision": 1,
+    "createdDate": "2021-03-30T15:40:46.030Z",
+    "project": {
+      "id": "ba99c102-55c3-4677-8b94-93b664554a10",
+      "name": "MobioosBSE-Dev",
+      "url": "https://dev.azure.com/MobioosAI/_apis/projects/ba99c102-55c3-4677-8b94-93b664554a10",
+      "state": 1,
+      "revision": 34,
+      "visibility": 0,
+      "lastUpdateTime": "2020-03-13T15:54:07.910Z"
+    }
+  }

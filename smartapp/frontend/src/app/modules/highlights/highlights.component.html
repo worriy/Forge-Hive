@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-refresher (ionRefresh)="onRefresh($event)" slot='fixed'>
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="header header-big has-main-color-bg with-triangle">
+    <div class="header-left">
+      <div class="view_title">{{ "highlights.highlightsConcernTitle" | translate }}</div>
+    </div>
+  </div>
+  <div class="highlights_container">
+    <highlights-general-mood [refresher]="refresher"></highlights-general-mood>
+    <highlights-best-contributor [refresher]="refresher"></highlights-best-contributor>
+    <highlights-best-post [refresher]="refresher"></highlights-best-post>
+    <highlights-top-posts [refresher]="refresher"></highlights-top-posts>
+  </div>
+</ion-content>

@@ -1,0 +1,339 @@
+@import 'templates/report';
+ 
+//***********
+// CARDS display
+// Card Container for animated cards
+//***********  
+.animated_card_container {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 16px;
+  &.is-card-active {
+    bottom: 35px;
+    z-index: 100;
+    transform: scale(1.05);
+    transition: all 0.33s cubic-bezier(.3,1,.2,1);
+  }
+}
+
+//************
+// Card 
+//************
+.card {
+  //border: 1px solid black;
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+
+  &.modal {
+    height: 70vh;
+  }
+
+  .header {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    color: $secondary-color;
+    font-weight: bold;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  &.with-background {
+    &.color {
+      background-color: $quote-bg-color;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .content-box {
+      height: 50%;
+      justify-content: flex-end;
+      .title {
+        font-size: 1.5em;
+      }
+    }
+
+    &.inset_content {
+      .picture {
+        max-height: unset;
+        height: stretch;
+        .content-box {
+          height: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .picture {
+    //border: 1px solid red;
+    width: 100%;
+    max-height: 60%;
+    height: stretch;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-box {
+    width: 100%;
+    min-height: 25%;
+    height: fit-content;
+    padding: 1em;
+  }
+
+  .reporting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: stretch;
+    .content-box {
+      min-height: unset;
+    }
+  }
+
+  .footer {
+    //border: 1px solid green;
+    width: 100%;
+    min-height: 15%;
+    height: fit-content;
+    &.multi-buttons {
+      min-height: unset;
+    }
+  }
+}
+
+//******************************
+// FAVORITE
+// If you want to like the card  
+//******************************
+.card_favorite {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 6px;
+  &.is-active {
+    background-color: white;
+    #heart-icon {
+      fill: red;
+    }
+  }
+}
+
+//********** 
+// LIST display
+// Container for a list item
+//**********
+.list_item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  height: 35vh;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 15px 20px 0 rgba(0,0,0,0.1);
+
+  &.reporting {
+    height: unset;
+    .header {
+      height: 40px;
+      border-bottom: 1px solid $light-grey;
+      line-height: 40px;
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }
+
+  .content-box {
+    height: 30%;
+    padding: 0.5em;
+    .title {
+      font-size: 1em;
+    }
+    .subtitle {
+      margin-top: 0.5em;
+    }
+  }
+
+  .picture {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    max-height: 50%;
+    height: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.color {
+      background: $quote-bg-color;
+    }
+  }
+
+  &.with-background {
+    .picture {
+      max-height: unset;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 20%;
+    &.multi-buttons {
+      height: fit-content;
+    }
+  }
+
+}
+
+//*********
+// Shared styles
+//*********
+.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+    font-size: 1.1em;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .subtitle {
+    opacity: 0.7;
+    font-size: 12px;
+    margin-top: 1em;
+    line-height: 1.2;
+    span {
+      &:nth-child(1n+2) {
+        &:before {
+          content: '•';
+          margin-left: 2px;
+          padding-left: 2px;
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  .button {
+    height: 100%;
+  }
+  &.two-buttons {
+    .button {
+      height: 100%;
+      &:first-child {
+      border-right: 1px solid $light-grey;
+      }
+    }
+  }
+
+  &.multi-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.5em 0;
+    .button {
+      border: 1px solid $secondary-color;
+      border-radius: 60px;
+      width: fit-content;
+      height: fit-content;
+      font-size: 1em;
+      padding: 5px;
+      margin: 5px 5px;
+    }
+  }
+
+  &.smiley-container {
+    padding: 0 0.5em;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+  }
+
+  &.report_tabs {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $light-grey;
+    .report-tab {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 33%;
+      height: 100%;
+      text-align: center;
+      margin: 0 1em;
+      padding: 1em 0;
+      font-weight: bold;
+      text-transform: capitalize;
+      .text {
+        font-size: 0.9em;
+        color: grey;
+      }
+      .number {
+        font-size: 1.1em;
+        color: black;
+      }
+    }
+  }
+}
+
+.empty_content_card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  overflow: hidden;
+  font-weight: bold;
+  background-color: white;
+  .header {
+    align-items: center;
+    border-bottom: 1px solid $light-grey;
+    color: $secondary-color;
+    text-transform: uppercase;
+    padding: 1.1em;
+    font-size: 0.9em;
+  }
+
+  .info_text {
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .footer {
+    height: 25%;
+    padding: 1.1em;
+    .button {
+      border: unset;
+    }
+  }
+}

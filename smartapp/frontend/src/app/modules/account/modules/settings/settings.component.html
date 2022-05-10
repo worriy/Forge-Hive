@@ -1,0 +1,27 @@
+<ion-content class="app">
+  <router-outlet></router-outlet>
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="router.navigate(['tabs/account'])" class="Toolbar__button">
+          <img src="assets/imgs/icons/left-arrow.svg" alt="">
+        </span>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "settings.settingsConcernTitle"| translate }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="AppMain has-grey-bg">
+    <div class="Main">
+      <div class="View">
+        <settings-languages></settings-languages>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,264 @@
+{
+    "rangeSeeds": [
+        {
+            "file": "smartapp/frontend/src/index.html",
+            "seeds": [
+                {
+                    "id": "19ab7dfa-2cc2-4e91-89ea-e0d0df42793d",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 5,
+                    "startColumn": 9,
+                    "endLine": 5,
+                    "endColumn": 13,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "bc9a1a2d-406e-4334-b4dc-a3d77fa747e5",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "b553bdcb-4e22-4278-bbe8-9300bd395db2",
+                    "startLine": 24,
+                    "startColumn": 14,
+                    "endLine": 24,
+                    "endColumn": 33,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "975c46e9-8316-4550-b3a1-16717692066f",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "b3676535-a065-48b7-b8d1-ddf5e07f6a82",
+                    "startLine": 25,
+                    "startColumn": 14,
+                    "endLine": 25,
+                    "endColumn": 35,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/authentication/login/login.component.html",
+            "seeds": [
+                {
+                    "id": "3913170a-4b55-49c1-af96-7171ea6e5fe9",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 5,
+                    "startColumn": 16,
+                    "endLine": 5,
+                    "endColumn": 20,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/authentication/register/register.component.html",
+            "seeds": [
+                {
+                    "id": "727d4e40-3d36-41c3-ab7d-56e87d116465",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 5,
+                    "startColumn": 16,
+                    "endLine": 5,
+                    "endColumn": 20,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/theme/variables.scss",
+            "seeds": [
+                {
+                    "id": "902bb0c0-98b5-4503-93a4-d7778af25a3c",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "149005ef-e48b-4abf-aeb8-047183e9a43e",
+                    "startLine": 8,
+                    "startColumn": 16,
+                    "endLine": 8,
+                    "endColumn": 23,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "287b0c4f-7835-4bc2-857f-c1b9ca84c983",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "fb96702f-69e2-4186-8b03-e4b2fb4ad4ed",
+                    "startLine": 10,
+                    "startColumn": 18,
+                    "endLine": 10,
+                    "endColumn": 25,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "d27ec34b-ebe3-4e60-89a2-77dc3d22e8a4",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "03e5af58-c196-4ba3-ab67-c9e9c5c29378",
+                    "startLine": 17,
+                    "startColumn": 17,
+                    "endLine": 17,
+                    "endColumn": 24,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/DbInitializer.cs",
+            "seeds": [
+                {
+                    "id": "d8476790-a0e2-43d4-b4ef-b641db3128d3",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "3705478f-ea82-44ad-9ed7-c869c03d6c43",
+                    "startLine": 236,
+                    "startColumn": 61,
+                    "endLine": 236,
+                    "endColumn": 93,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a2a8a474-206b-470c-baa0-3d6469b58b67",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "c8b50b7c-e3cc-4fba-bc67-3557bfb5d53c",
+                    "startLine": 255,
+                    "startColumn": 61,
+                    "endLine": 255,
+                    "endColumn": 98,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "39bc4f38-812d-4fb3-9195-90d0cd27b66a",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "c9e7dd99-c764-4f3e-a026-3e0e8af41e71",
+                    "startLine": 274,
+                    "startColumn": 61,
+                    "endLine": 274,
+                    "endColumn": 95,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "817fca93-261a-480d-8b08-fb718c3d449b",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "9bf0f4d5-f7d4-46f5-add7-4d948bb249d0",
+                    "startLine": 328,
+                    "startColumn": 61,
+                    "endLine": 328,
+                    "endColumn": 100,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "build/build.json",
+            "seeds": [
+                {
+                    "id": "b6d8bd2a-9fe3-48e2-85a6-5483a664b11d",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 41,
+                    "startColumn": 18,
+                    "endLine": 41,
+                    "endColumn": 29,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Views/Home/Index.cshtml",
+            "seeds": [
+                {
+                    "id": "4d3ff754-c88f-465f-8d69-985b1b76f1c7",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 13,
+                    "startColumn": 20,
+                    "endLine": 13,
+                    "endColumn": 24,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Views/Shared/_Layout.cshtml",
+            "seeds": [
+                {
+                    "id": "889c2d82-fd88-4568-a9f1-acc6cf4ddc1e",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 7,
+                    "startColumn": 32,
+                    "endLine": 7,
+                    "endColumn": 36,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "bfb3fec6-ee0c-4de9-8075-c00a2acb8c41",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 41,
+                    "startColumn": 22,
+                    "endLine": 41,
+                    "endColumn": 26,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/backend/Views/Shared/_LayoutMin.cshtml",
+            "seeds": [
+                {
+                    "id": "1c1b2810-67de-432e-b67c-9b35720cff95",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 7,
+                    "startColumn": 32,
+                    "endLine": 7,
+                    "endColumn": 36,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "83310cfd-95a0-43cc-8519-6c164daefb26",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "ef05521e-882d-4bd5-b9df-671a8beae473",
+                    "startLine": 29,
+                    "startColumn": 22,
+                    "endLine": 29,
+                    "endColumn": 26,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "smartapp/frontend/src/app/modules/posts/components/top-posts/top-posts.component.html",
+            "seeds": [
+                {
+                    "id": "c3295295-5cec-427b-bcb3-ffdb2b21a91b",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "03e5af58-c196-4ba3-ab67-c9e9c5c29378",
+                    "startLine": 6,
+                    "startColumn": 117,
+                    "endLine": 6,
+                    "endColumn": 124,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        }
+    ],
+    "fileSeeds": []
+}

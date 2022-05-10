@@ -1,0 +1,33 @@
+@import '/src/theme/variables.scss';
+
+.best_contributor_card {
+  height: 40vh;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  overflow: hidden;
+  .content {
+    height: 75%;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    div {
+      display: flex;
+      justify-content: center;
+    }
+    .thumbnail, .thumbnail--default {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 30px;
+      margin-bottom: unset;
+    }
+  }
+  .footer {
+    height: 25%;
+  }
+}

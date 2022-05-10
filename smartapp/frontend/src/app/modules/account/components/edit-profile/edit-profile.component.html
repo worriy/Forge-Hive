@@ -1,0 +1,104 @@
+<ion-content class="app">
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="return()" class="Toolbar__button">
+          <img src="assets/imgs/icons/left-arrow.svg" alt="">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <a type="submit" (click)="updateUser()" class="Toolbar__button">{{ "commons.save" | translate }}</a>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "account.profil" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <div class="AppMain has-grey-bg">
+    <div class="Main">
+      <div class="View">
+        <!-- if the picture didn't change, show the saved picture -->
+        <div class="ion-text-center" *ngIf="change == false">
+          <div class="divPhoto" (click)="selectImageSource()">
+            <div *ngIf="profilPicture">
+              <ion-img class="photo" width="120px" height="120px" src="data:image/*;base64,{{profilPicture}}" ></ion-img>
+            </div>
+            <div *ngIf="profilPicture == null" class="edit_profil_img--default" width="120px" height="120px">{{user?.firstname?.charAt(0)}}</div>
+            <div class="updatePhoto">
+              <ion-icon class="fakefile" name="camera"></ion-icon>
+            </div> 
+          </div>
+        </div>
+        <!-- if it changed, show the new picture -->
+        <div class="ion-text-center" *ngIf="change == true">
+          <div class="divPhoto" (click)="selectImageSource()">
+            <ion-img class="photo" width="120px" height="120px" [src]="url"></ion-img>
+            <div class="updatePhoto">
+              <ion-icon class="fakefile" name="camera"></ion-icon>
+            </div> 
+          </div>
+        </div>
+    
+        <form *ngIf="userForm" [formGroup]="userForm">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating">{{ "account.firstName" | translate }}</ion-label>    
+              <ion-input formControlName='firstName'></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating">{{ "account.lastName" | translate }}</ion-label>
+              <ion-input formControlName='lastName'></ion-input>
+            </ion-item>
+    
+            <ion-item >
+              <ion-label position="floating">{{ "commons.email" | translate }}</ion-label>
+              <ion-input formControlName='email' disabled></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating">{{ "account.phoneNumber" | translate }}</ion-label>
+              <ion-input type="text" formControlName='phoneNumber'></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating">{{ "commons.department" | translate }} </ion-label>
+              <ion-input formControlName='department'></ion-input>
+            </ion-item>
+  
+            <ion-item>
+              <ion-label position="floating">{{ "commons.job" | translate }} </ion-label>
+              <ion-input formControlName='job'></ion-input>
+            </ion-item>
+  
+            <ion-item>
+              <ion-label position="floating">{{ "commons.country" | translate }} </ion-label>
+              <ion-input formControlName='country'></ion-input>
+            </ion-item>
+    
+            <ion-item lines="none">
+              <ion-label position="floating">{{ "commons.city" | translate }}</ion-label>
+              <ion-input formControlName='city'></ion-input>
+            </ion-item>
+          </ion-list>
+        </form>
+
+        <ion-list lines="none" class="ion-no-padding">
+          <ion-item (click)="toChangePassword()">
+            <ion-label>
+              {{ "account.changePassword" | translate }}
+            </ion-label>
+            
+            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+</ion-content>

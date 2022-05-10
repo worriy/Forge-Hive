@@ -1,0 +1,102 @@
+@import '../../theme/variables.scss';
+@import 'components/View';
+@import 'components/Toolbar';
+@import 'helpers/mixins';
+@import 'base/_all';
+@import 'layout/_all';
+@import 'components/buttons';
+@import 'components/cards/cards';
+@import 'components/posts/_all';
+
+@import 'views/_all';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body{
+  margin: 0;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 100vh;
+}
+
+.app{
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  &_scroll{
+    overflow-y: scroll;
+  }
+  &.has-navbar{
+    height: calc(100vh - 162px );
+  }
+  &.is-fullheight{
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.has-black-bg{
+  background-color: black;
+}
+
+.has-grey-bg{
+  background-color: $light-grey;
+}
+
+.has-main-color-bg{
+  background-color: $primary-color;
+}
+
+::-webkit-scrollbar{
+  width: 0 !important  
+}
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+}
+
+.container{
+  padding: 0 16px;
+}
+
+.footer_actions{
+  display: block;
+  z-index: 99;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 0;
+  max-width: none;
+}
+
+.thumbnail--default{
+  width: 40px;
+  height: 40px;
+  margin-bottom: .5em;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: $primary-color;
+  text-align: center;
+  background-color: white;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+ion-loading.transparent {
+  .loading-wrapper {
+    background: transparent;
+    box-shadow: none;
+    .spinner-crescent circle {
+      stroke-width: 8px;
+    }
+  }
+}

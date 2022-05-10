@@ -1,0 +1,20 @@
+<div *ngIf="topPosts && topPosts.length > 0">  
+  <div class="top-posts top-posts-listing">
+    <div class="top-posts-title">{{ "highlights.topPosts" | translate }}</div>
+    <ion-list lines="full" class="ion-no-padding">
+      <ion-item class="top-post" *ngFor="let card of topPosts" (click)="onShowCard(card)">
+        <ion-thumbnail *ngIf="card?.type !== 'Quote'" slot="start" class="top-post-image">
+          <img [src]="'data:image/jpeg;base64,' + card?.picture"/>
+        </ion-thumbnail>
+        <ion-label>
+          <h2><strong>{{card?.content}}</strong></h2>
+          <p>
+            <span>{{card?.views}} {{ "reporting.view" | translate }}{{card?.views > 1 ? "s" : ""}}</span> •
+            <span>{{card?.answers}} {{ "reporting.answer" | translate }}{{card?.answers > 1 ? "s" : ""}}</span> •
+            <span>{{card?.likes}} {{ "reporting.like" | translate }}{{card?.likes > 1 ? "s" : ""}}</span>
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</div>

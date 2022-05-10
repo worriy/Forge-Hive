@@ -1,0 +1,12 @@
+@{
+    string action = Context.Request.Path;
+    if (action.Contains("ResetPassword"))
+    {
+        Layout = "_LayoutMin";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+
+}

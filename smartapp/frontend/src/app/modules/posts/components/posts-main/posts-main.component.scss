@@ -1,0 +1,23 @@
+@import '/src/theme/variables.scss';
+
+.tabs-post {
+  overflow: auto;
+  white-space: nowrap;
+  .tab-post {
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    font-size: 13px;
+    line-height: 2em;
+    display: inline-block;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    &.is-active {
+      font-weight: bold;
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<ion-content>
+  <div class="AppHeader has-main-color-bg">
+    <div class="Toolbar Toolbar__dark">
+      <!-- Left -->
+      <div class="Toolbar__left">
+        <span tappable (click)="onCancel()" class="Toolbar__button">
+          <img src="assets/imgs/icons/close-white.svg" alt="" width="16px" height="16px">
+        </span>
+      </div>
+      <!-- Right -->
+      <div class="Toolbar__right">
+        <button tappable (click)="onSaveChanges()" class="Toolbar__button">{{ "commons.save" | translate }}</button>
+      </div>
+      <!-- Center -->
+      <div class="Toolbar__center">
+        <div class="Toolbar__center--container">
+          <span class="Toolbar__title">{{ "manageGroups.addMembers" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="AppMain has-white-bg">
+    <div class="Main">
+      <div class="View">
+        <div class="autocomplete">
+
+          <!-- SEARCH BAR -->
+          <ion-searchbar class="ion-searchbar" [(ngModel)]="searchTerm" placeholder="{{ 'manageGroups.filterItems' | translate }}">
+          </ion-searchbar>
+
+          <ion-list lines="none" class="ion-no-padding" *ngIf="filteredUsers">
+            <ng-container *ngFor="let user of filteredUsers">
+              <ion-item *ngIf="user.userProfileId != userProfileId">
+                <ion-thumbnail slot="start">
+                  <img *ngIf="user.picture != null" class="thumbnail" [src]="'data:image/jpeg;base64,'+ user.picture"/>
+                  <div *ngIf="user.picture == null" class="thumbnail--default">{{user.firstname.charAt(0)}}</div>   
+                </ion-thumbnail>
+                <ion-label>
+                  <h2><strong>
+                    <span>{{user.firstname}} {{user.lastname}}</span>
+                  </strong></h2>
+                  <p>
+                    {{user.email}}
+                  </p>
+                </ion-label>
+                <ion-checkbox [(ngModel)]="selectedUser[user.userProfileId]" (ionChange)="onUpdateMember($event, user.userProfileId)"></ion-checkbox>
+              </ion-item>
+            </ng-container>
+          </ion-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

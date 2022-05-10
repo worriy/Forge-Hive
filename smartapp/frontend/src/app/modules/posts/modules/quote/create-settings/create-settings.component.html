@@ -1,0 +1,10 @@
+<form class="form" [formGroup]="settingsForm">
+  <ion-item>
+    <ion-label>{{ "posts.publicationDate" | translate }}</ion-label>
+    <ion-datetime formControlName="publicationDate" max="2050" type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="publicationDate"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{ "posts.endDate" | translate }}</ion-label>
+    <ion-datetime formControlName="endDate" max="2050" type="date" displayFormat="MMMM DD YYYY" pickerFormat="DD MMM YYYY" name="endDate"></ion-datetime>
+  </ion-item>
+</form>

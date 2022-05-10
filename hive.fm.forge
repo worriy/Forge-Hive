@@ -1,0 +1,339 @@
+{
+    "core": {
+        "key": "0",
+        "name": "Core",
+        "type": "Core",
+        "parent": "-1",
+        "parentRelation": "Normal",
+        "presence": "Mandatory",
+        "lgFile": "",
+        "role": "",
+        "hexColor": "",
+        "help": "",
+        "nodeWeight": -1
+    },
+    "functionalities": [
+        {
+            "key": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "name": "Posts_creation",
+            "type": "Functionality feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Post_creation.lg",
+            "role": "",
+            "hexColor": "#ab632b",
+            "help": "",
+            "nodeWeight": "70"
+        },
+        {
+            "key": "6a22d749-1b1d-4e1c-a6b1-a0b1aa9ed8db",
+            "name": "Idea",
+            "type": "Functionality feature",
+            "parent": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#299e2d",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "797a42b4-e5d0-4157-bcbf-c8e8a95ebfa2",
+            "name": "Question",
+            "type": "Functionality feature",
+            "parent": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#394ac6",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "214c6a31-8c2f-42fe-8ef3-b719bc29b18a",
+            "name": "Event",
+            "type": "Functionality feature",
+            "parent": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#aa35ac",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "name": "Quote",
+            "type": "Functionality feature",
+            "parent": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "parentRelation": "Normal",
+            "presence": "Optional",
+            "lgFile": "resources\\files\\lg-files\\Quote_question.lg",
+            "role": "",
+            "hexColor": "#559b8f",
+            "help": "resources\\files\\help-line\\Quote-help.md",
+            "nodeWeight": -1
+        },
+        {
+            "key": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "name": "Suggestion",
+            "type": "Functionality feature",
+            "parent": "5d27b4bb-9b43-4bb2-baca-7e3f924850a3",
+            "parentRelation": "Normal",
+            "presence": "Optional",
+            "lgFile": "resources\\files\\lg-files\\Suggestion_question.lg",
+            "role": "",
+            "hexColor": "#ababab",
+            "help": "resources\\files\\help-line\\Suggestion-help.md",
+            "nodeWeight": -1
+        },
+        {
+            "key": "42a35ed1-c417-4028-bfec-320e632201a1",
+            "name": "Flow_display",
+            "type": "Functionality feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Flow_display_question.lg",
+            "role": "",
+            "hexColor": "#76046d",
+            "help": "resources\\files\\help-line\\Flow_display.md",
+            "nodeWeight": "90"
+        },
+        {
+            "key": "33583363-bfc8-4099-b26c-65dee1e26c9f",
+            "name": "Cards",
+            "type": "Functionality feature",
+            "parent": "42a35ed1-c417-4028-bfec-320e632201a1",
+            "parentRelation": "Xor",
+            "lgFile": "resources\\files\\lg-files\\Flow_display cards.lg",
+            "role": "",
+            "hexColor": "#a03d2c",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "9d326605-ec24-4906-8404-b62d06ed1907",
+            "name": "List",
+            "type": "Functionality feature",
+            "parent": "42a35ed1-c417-4028-bfec-320e632201a1",
+            "parentRelation": "Xor",
+            "lgFile": "resources\\files\\lg-files\\Flow_display list.lg",
+            "role": "",
+            "hexColor": "#1eb201",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "19fdec53-4873-4de7-bf24-fcfbee10591d",
+            "name": "Like",
+            "type": "Functionality feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Optional",
+            "lgFile": "resources\\files\\lg-files\\Like_question.lg",
+            "role": "",
+            "hexColor": "#cc1919",
+            "help": "resources\\files\\help-line\\Like_button.md",
+            "nodeWeight": "80"
+        },
+        {
+            "key": "679bed3b-7af0-41d8-9ffc-420924bf9180",
+            "name": "Default_language",
+            "type": "Functionality feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Default_language.lg",
+            "role": "",
+            "hexColor": "#a95151",
+            "help": "resources\\files\\help-line\\Default_language.md",
+            "nodeWeight": "0"
+        },
+        {
+            "key": "317a9a2f-8a56-4964-b391-39b67db9e38a",
+            "name": "En",
+            "type": "Functionality feature",
+            "parent": "679bed3b-7af0-41d8-9ffc-420924bf9180",
+            "parentRelation": "Xor",
+            "lgFile": "resources\\files\\lg-files\\Default_language en.lg",
+            "role": "",
+            "hexColor": "#9e9494",
+            "help": "",
+            "nodeWeight": -1
+        },
+        {
+            "key": "41c349f7-d4b3-42bc-a787-6107802f1c8f",
+            "name": "Fr",
+            "type": "Functionality feature",
+            "parent": "679bed3b-7af0-41d8-9ffc-420924bf9180",
+            "parentRelation": "Xor",
+            "lgFile": "resources\\files\\lg-files\\Default_language fr.lg",
+            "role": "",
+            "hexColor": "#49a268",
+            "help": "",
+            "nodeWeight": -1
+        }
+    ],
+    "fileResources": [
+        {
+            "key": "b553bdcb-4e22-4278-bbe8-9300bd395db2",
+            "name": "Icon",
+            "type": "Resource feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Icon_question.lg",
+            "role": "",
+            "hexColor": "#b82828",
+            "help": "resources\\files\\help-line\\Icon_application.md",
+            "nodeWeight": "30",
+            "filePath": "smartapp/frontend/resources"
+        },
+        {
+            "key": "b3676535-a065-48b7-b8d1-ddf5e07f6a82",
+            "name": "Splash",
+            "type": "Resource feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Splash_question.lg",
+            "role": "",
+            "hexColor": "#8a8433",
+            "help": "resources\\files\\help-line\\Splash-help.md",
+            "nodeWeight": "20",
+            "filePath": "smartapp/frontend/resources"
+        },
+        {
+            "key": "3705478f-ea82-44ad-9ed7-c869c03d6c43",
+            "name": "IdeaImage",
+            "type": "Resource feature",
+            "parent": "6a22d749-1b1d-4e1c-a6b1-a0b1aa9ed8db",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\IdeaImage_question.lg",
+            "role": "",
+            "hexColor": "#836e87",
+            "help": "resources\\files\\help-line\\Idea.md",
+            "nodeWeight": -1,
+            "filePath": "smartapp/backend/wwwroot/uploads"
+        },
+        {
+            "key": "c9e7dd99-c764-4f3e-a026-3e0e8af41e71",
+            "name": "EventImage",
+            "type": "Resource feature",
+            "parent": "214c6a31-8c2f-42fe-8ef3-b719bc29b18a",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\EventImage_question.lg",
+            "role": "",
+            "hexColor": "#86ab82",
+            "help": "resources\\files\\help-line\\Event_cards.md",
+            "nodeWeight": -1,
+            "filePath": "smartapp/backend/wwwroot/uploads"
+        },
+        {
+            "key": "c8b50b7c-e3cc-4fba-bc67-3557bfb5d53c",
+            "name": "QuestionImage",
+            "type": "Resource feature",
+            "parent": "797a42b4-e5d0-4157-bcbf-c8e8a95ebfa2",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\QuestionImage_question.lg",
+            "role": "",
+            "hexColor": "#2f9d96",
+            "help": "resources\\files\\help-line\\Question.md",
+            "nodeWeight": -1,
+            "filePath": "smartapp/backend/wwwroot/uploads"
+        },
+        {
+            "key": "9bf0f4d5-f7d4-46f5-add7-4d948bb249d0",
+            "name": "SuggestionImage",
+            "type": "Resource feature",
+            "parent": "3fd9f217-3df8-4ca1-a1aa-55f09985fb7c",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\SuggestionImage_question.lg",
+            "role": "",
+            "hexColor": "#4e7588",
+            "help": "resources\\files\\help-line\\Suggestion-help.md",
+            "nodeWeight": -1,
+            "filePath": "smartapp/backend/wwwroot/uploads"
+        }
+    ],
+    "textResources": [
+        {
+            "key": "ef05521e-882d-4bd5-b9df-671a8beae473",
+            "name": "Title",
+            "type": "Resource feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Title_question.lg",
+            "role": "",
+            "hexColor": "#8c5a89",
+            "help": "resources\\files\\help-line\\Title_question-help.md",
+            "nodeWeight": "100"
+        }
+    ],
+    "smartAppAssetResources": [],
+    "colorResources": [
+        {
+            "key": "03e5af58-c196-4ba3-ab67-c9e9c5c29378",
+            "name": "QuoteColor",
+            "type": "Resource feature",
+            "parent": "7575ce14-1ed4-43a8-8fec-cd0c71010a26",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\QuoteImage_question.lg",
+            "role": "",
+            "hexColor": "#5c3f73",
+            "help": "resources\\files\\help-line\\Quote-help.md",
+            "nodeWeight": -1
+        },
+        {
+            "key": "149005ef-e48b-4abf-aeb8-047183e9a43e",
+            "name": "Primary_color",
+            "type": "Resource feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Primary_color_question.lg",
+            "role": "",
+            "hexColor": "#8349a2",
+            "help": "resources\\files\\help-line\\Primary_color.md",
+            "nodeWeight": "50"
+        },
+        {
+            "key": "fb96702f-69e2-4186-8b03-e4b2fb4ad4ed",
+            "name": "Secondary_color",
+            "type": "Resource feature",
+            "parent": "0",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "resources\\files\\lg-files\\Secondary_color_question.lg",
+            "role": "",
+            "hexColor": "#ad4861",
+            "help": "resources\\files\\help-line\\Secondary_color-help.md",
+            "nodeWeight": "40"
+        }
+    ],
+    "referencedModels": [],
+    "constraints": [
+        {
+            "type": "⇒",
+            "left": {
+                "type": "feature",
+                "featureKey": "19fdec53-4873-4de7-bf24-fcfbee10591d"
+            },
+            "right": {
+                "type": "feature",
+                "featureKey": "33583363-bfc8-4099-b26c-65dee1e26c9f"
+            }
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+<ion-content>
+  <router-outlet></router-outlet>  
+  <div class="app">
+    <div class="AppHeader header header-big has-main-color-bg">
+      <div class="header-left">
+        <div class="header_profil">
+          <div *ngIf="profilPicture != null" class="header_profil_img" [ngStyle]="{ 'background-image': 'url(data:image/png;base64,' + profilPicture + ')'}"></div>
+          <div *ngIf="profilPicture == null" class="header_profil_img--default">{{user?.firstname?.charAt(0)}}</div>
+          <div class="header_profil_content">
+            <div class="header_profil_name">{{user?.firstname}} {{user?.lastname}}</div>
+            <div class="header_profil_position">{{user?.job}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="AppMain has-grey-bg">
+      <div class="Main account">
+        <ion-list lines="none" class="ion-no-padding">
+          <ion-item (click)="toEditProfile()">
+            <ion-label>
+              {{ "account.editProfileLayout" | translate }}
+            </ion-label>
+            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item (click)="toManageGroups()">
+            <ion-label>
+              {{ "manageGroups.manageGroupsConcern" | translate }}
+            </ion-label>
+            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item (click)="toSettings()">
+            <ion-label>
+              {{ "settings.settingsConcernTitle" | translate }}
+            </ion-label>
+            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-list>
+        <ion-list lines="none" class="ion-margin-top">
+          <ion-item (click)="signOut()">
+            <ion-label>
+              {{ "account.signOut" | translate }}
+            </ion-label>
+            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
