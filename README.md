@@ -16,9 +16,9 @@ Regarding running the application, As Hive implements some conflicting features 
 
 # Branch presentations
 This repository is organized with the following branches: 
-  - `master`: The main branch that contains the SPL built with **Mobioos-Forge**.
-  - `initial-application`: The initial application without any forge files.
-  - `variants/forge-variants`: The variants generated [here](#customization).
+  - [`master`](https://github.com/Mobioos/Forge-Hive/tree/master): The main branch that contains the SPL built with **Mobioos-Forge**.
+  - [`initial-application`](https://github.com/Mobioos/Forge-Hive/tree/initial-application): The initial application without any forge files.
+  - [`variants/forge-variant`](https://github.com/Mobioos/Forge-Hive/tree/variants/forge-variant): The variants generated [here](#customization).
 
 # Pre-requisites
 As Hive is written in Angular and .NET, you need to install: [.NET 5.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/5.0), [Node.js](https://nodejs.org/en/), and [npm](https://www.npmjs.com/) in order to run variants of the application.
