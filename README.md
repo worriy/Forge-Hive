@@ -29,9 +29,9 @@ Regarding Mobioos Forge, you can install the [C#](https://marketplace.visualstud
 
 ## Connection
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/connection/login.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/connection/login.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/connection/register.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/connection/register.png)
 
 To access the application, users can create an account by clicking on the **"Register"** link and filling in the mandatory information, including the mail and password can then be used later on to connect. **Passwords must be at least 8 characters long and contain both a letter and a number**.
 
@@ -39,14 +39,14 @@ To access the application, users can create an account by clicking on the **"Reg
 
 Once users are connected to the application, they have access to the first page of the application, the Flow. This is the central point of the application, where are regrouped all of the collaborators' shared content, presented as cards of different types depending on the content type., An "Idea" card, for example, can be answered by "Yes" or "No" and a "Report" card is automatically generated the day after the concerned card's expiration date to show its results.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/flow/flow.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/flow/flow.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/flow/report.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/flow/report.png)
 
 
 Users can navigate through the list of cards by swiping them to the left or right or decide to "Discard" one by swiping it to the top of the screen.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/flow/flow-navigation.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/flow/flow-navigation.png)
 
 
 ## The Highlights Section
@@ -55,28 +55,28 @@ The Highlights section of the application is shared by all the collaborators and
 
 The best contributor is the collaborator that has created the most posts in the past 30 days and has the most average answer number on these posts.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/highlight/best-contributor.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/highlight/best-contributor.png)
 
 The best post shows the results of a post that expired in the past ten days that have the best (answers /views) score.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/highlight/best-post.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/highlight/best-post.png)
 
 Finally, the top posts are non-expired posts (up to 5) with the best (answers /views) scores. It is possible to click on one of the list's items to show the card and answer it if it wasn't done before. Otherwise, it shows its results.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/highlight/top-post1.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/highlight/top-post1.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/highlight/top-post2.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/highlight/top-post2.png)
 
 
 ## The Posts Section
 
 The post section is where users find their previously created posts, see their details and results, and create new ones. It shows a list of top posts that are the current user's posts with the most answers and the list of all the user's posts.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/posts.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/posts.png)
 
 The post creation process starts when the user clicks on the create button in the top right corner and then needs to choose which type of post to create.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/new-post.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/new-post.png)
 
 Once the post type is selected, the user is invited to enter its content and choose a picture to display on the card or choose to use the default image. If the card is a question, it will then ask the user to create up to 5 answers available for the question. The card then needs to be configured. It requires a publication date that is the date at which the card will be available for other collaborators and an expiration date that is the date until which it will be available.
 
@@ -84,61 +84,61 @@ It is possible to make the card public available for every other contributor or 
 
 Once all the card's settings have been correctly configured, a preview of the card displayed in the Flow is shown, and the user can choose to save it or go back and change the information. Once saved, the card will be available in the user's posts list and its results. It is essential to know that only the yet-to-be-published cards can be edited after being saved. Once a card is published, its content is definitive (however, it is still possible to delete it).
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/new-idea.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/new-idea.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/post-settings.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/post-settings.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/idea-preview.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/idea-preview.png)
 
 Clicking on one of the main page items will open the concerned post's details page, showing its different information chosen during its creation and others such as its status (published, not published, or closed) and its actual results.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/idea-published.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/idea-published.png)
 
 It is possible from this page or the previous one to click on the menu icon (top right corner in the details page and on the end of the line of each item on the main page) to open a secondary menu giving access to the deletion of the post or its edition if it is in the "unpublished" status. When accessing the post edition, it is then possible to change all the card information chosen during its creation and save the changes.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/posts/edit-idea.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/posts/edit-idea.png)
 
 ## The Account Section
 
 The account section allows users to review and edit their profile information, manage their groups, change the application settings or sign out from the application.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/account.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/account.png)
 
 ## The Profile section
 
 Users can view and edit any of their profile information from this page.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/profile.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/profile.png)
 
 ## The Groups Management section
 
 In this part of the application, users can see the group they are a member of. They cal also manage the ones they created and create new ones. This group system makes users able to target a specific group and, by extension, particular collaborators when creating cards to restrict persons' ability to answer these cards.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/groups.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/groups.png)
 
 To create a group, users only need to enter a name, a country, and a city for the group before saving it.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/create-group.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/create-group.png)
 
 Once the group is created, it is directly possible to add any collaborators as members of this group and create cards targeting this group. The group creator can, of course, remove members from his groups as well.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/group-created.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/group-created.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/add-members.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/add-members.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/group-finished.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/group-finished.png)
 
 The group's creator can remove members by clicking on their corresponding menu icon (at the end of each line of the list) and selecting the remove option or by accessing the same page used to add members and uncheck the corresponding checkboxes before saving. The members themselves can leave the group by clicking on their corresponding menu icon in the list of members and choosing "leave." This is also possible from the list of groups by clicking on the menu icon next to a group and choosing "leave" for groups of which the user is not the creator.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/remove-user.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/remove-user.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/group-options.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/group-options.png)
 
 Group creators can use the same icon in the group's list page to delete a group or edit it, cards targeting deleted groups will not be available anymore, but their results will be viewable by their creator. Editing a group is just a matter of changing its name, country, and city and has no further impact.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/group-actions.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/group-actions.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/user-guide/groups/edit-group.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/user-guide/groups/edit-group.png)
 
 ## The Settings section
 
@@ -156,7 +156,7 @@ As presented in the [documentation](https://documentation.mobioos.ai) of Mobioos
 
 In the context of Hive, we identified several **Functionality Features** and **Resource Features** for this application. The following figure shows the Feature Model related to the *Hive application.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/feature-model/feature-model.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/feature-model/feature-model.png)
 
 We will detail the different Functionality Features and Resource Features in the following sections.
 
@@ -236,7 +236,7 @@ The **_Suggestion_** Functionality Feature enables users to create suggestion po
 
 First, we know from the previous sections that the frontend codes for different types of posts are grouped in modules. Thus, we can add a *File-Marker* on the root directory of the suggestion module: `smartapp\frontend\src\app\modules\posts\modules\suggestion`.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/suggestion-folder-file-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/suggestion-folder-file-marker.png)
 
 Here we want to analyze the files' content so we **answer yes when asked about the content analysis**.
 
@@ -244,29 +244,29 @@ This should take care of the _suggestion_ module. By creating a File-Marker on t
 
 We can do the same thing to map the card component for suggestion posts:
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/suggestion-card-folder-file-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/suggestion-card-folder-file-marker.png)
 
 With only these two File-Markers, we should be done with most of the suggestion mapping. Next, we want to make sure that no references are left. **Most of the references should get picked up by Mobioos Forge**. Still, there are some cases that we have to handle ourselves, like references in HTML files or lazy-loaded references.
 
 For example, on the main posts page, we display a filtering menu to see only posts of specific types. It does not make sense to show the suggestion filter when the Feature is deactivated, so we need to map it with ***Suggestion***. So we add a *Code-Marker* inside the file `post-main.component.html`
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/post-main-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/post-main-code-marker.png)
 
 Next, in files `choose-new-post-category.component.html` and `choose-new-post-category.component.ts`, we find a menu item that creates a new post as well as its corresponding behavior in the ts file. We add a Code-Marker on both of them.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/choose-new-post-html-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/choose-new-post-html-code-marker.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/choose-new-post-ts-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/choose-new-post-ts-code-marker.png)
 
 Note that in this case, we could only map in the HTML to hide the display and leave the typescript code as it is since it should never fall in this switch case. Nevertheless, we chose to map both anyway for code cleanliness' sake.
 
 Next, we find two occurrences in the `flow.component.html` file that we need to map as well.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/flow-component-html-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/flow-component-html-code-markers.png)
 
 Last, we map the _Suggestion_ type in the `CardTypes` enum.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/frontend-cardtype-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/frontend-cardtype-code-marker.png)
 
 With all that, we should be done with the Markers creation step for the **_Suggestion_** Functionality Feature. Every reference that we left aside should get picked up by Mobioos Forge. We thus have the opportunity to map them later on.
 
@@ -285,19 +285,19 @@ The next section describes the Markers related to the backend of the ***Suggesti
 
 In the backend source code, we can find the `Suggestion` class that is used for each type of post. Here we decide to add a File-Marker on the file `Suggestion.cs`. Thus, if the **_Suggestion_** Functionality Feature is disabled, the file will be deleted.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/suggestion-cs-file-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/suggestion-cs-file-marker.png)
 
 Now, we will look for other references. We have a `Suggestion` type in the `CardTypes` enumeration. We can add a Code-Marker on it.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/backend-cardtype-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/backend-cardtype-code-marker.png)
 
 Next, in the file `DbInitializer.cs`, we have a method that creates the default picture for the suggestion card. We can add a Code-Marker to this method.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/db-initializer-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/db-initializer-code-marker.png)
 
 Last, the `Program.cs` file contains a property called `suggestionDefaultPic` that gets the `PictureId` of the _Suggestion_ card. We add a Code-Marker for this variable.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/program-cs-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/program-cs-code-marker.png)
 
 The remaining references should get picked up by Mobioos Forge.
 
@@ -313,7 +313,7 @@ Now that we added the Markers, we can start validating the mappings computed by 
 
 We will now take care of the Feature **_Flow_display_** and its children: **_Cards_** and **_List_**. The following figure illustrates the **_Flow_display_** Functionality Feature from the initial [Feature Model](#feature-model) for a quick reminder.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/feature-model/zoom-flow-display.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/feature-model/zoom-flow-display.png)
 
 We can see that the Feature's children are mutually exclusive since they are linked through an **Only one (Xor)** relation. We remember that the app has been implemented following the 150% app approach, meaning that each Feature's code is present at the same time. The idea here will be thus to map these implementations to the corresponding Feature to delete one or the other during the customization process.
 
@@ -323,7 +323,7 @@ Even though it is mostly a display issue, we will also place Markers in the _typ
 
 First, we add Code-Markers on the HTML file for the flow. We can see two `ng-containers` containing a list each. **The first one displays the cards stack**, and **the second one shows the list**. We place our Code-Markers accordingly as shown in the figure below.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/html-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/html-code-markers.png)
 
 The first Code-Marker is linked to the ***Cards*** Functionality Feature, whereas the second Code-Marker is linked to the ***List*** Functionality Feature.
 
@@ -331,23 +331,23 @@ Now, let’s clean up the _typescript_ file. We mostly have to place Code-Marker
 
 First, we add a Code-Marker on several properties of the class specific to the **_Cards_** Functionality Feature:
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/ts-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/ts-code-markers.png)
 
 These are used to handle the stack of cards and can be deleted when the **_List_** Feature is selected. Once the Code-Marker is added, Mobioos Forge will look for occurrences and create Maps from them.
 
 Regarding the **_List_** display, we only need to mark the `onCardListAnswered` method.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/ts-list-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/ts-list-code-markers.png)
 
 Now that we are done with the flow components, we have to take care of the card components; quick reminder, each type of post has its display component in the shared module. These display components contain the code for each type of display. We do the same work for every one of these components. Let’s take the event card just like in the flow. In the file `event-card.component.html`, we have two `div`, each containing one display, the first for the cards display and the second for the list display. We add the corresponding Code-Markers on these.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/event-card-html-card-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/event-card-html-card-code-markers.png)
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/event-card-html-list-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/event-card-html-list-code-markers.png)
 
 Next, we only have a Code-Marker to add in the related typescript file (`event-card.component.ts`). This Code-Marker is added on the property `activeCardId` that is used to animate the card when it comes on top of the stack:
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/flow_display/event-card-ts-card-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/flow_display/event-card-ts-card-code-markers.png)
 
 We then repeat these operations on every card component and should be done with the Markers creation of these Features.
 
@@ -359,7 +359,7 @@ The primary color of the application is the color used throughout the app to giv
 
 To map this color (and the secondary one alike), we need to find its declaration. In our case, it is located in the `smartapp/frontend/src/theme/variables.scss` file. We add a Code-Marker on the declaration value.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/primary_secondary_colors/variables-scss-code-markers.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/primary_secondary_colors/variables-scss-code-markers.png)
 
 Since the Resource Feature is a Color, its configuration during the customization process will be presented with a color picker. Thus, the chosen hexadecimal value will replace the mapped one.
 
@@ -369,7 +369,7 @@ The **_SuggestionImage_** Resource Feature represents the default picture for th
 
 To add a Code-Marker to this Resource Feature, we have to find the URL referencing this picture. On the method `CreateSuggestionDefaultPic` of the _DbInitializer.cs_ file. We then add a Code-Marker on the given URL.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/markers/suggestion/suggestion-image-db-initializer-code-marker.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/markers/suggestion/suggestion-image-db-initializer-code-marker.png)
 
 This concludes the creation of Markers for the Hive application. You can now follow the same processes to add Markers for the remaining Features. You can now start validating them as well as their related Maps. Most maps validation are straightforward as the best way to map them is to map the overall class, method or statement.
 
@@ -377,17 +377,17 @@ This concludes the creation of Markers for the Hive application. You can now fol
 
 Once all the Markers are created and their related Maps are validated, we can try to generate a variant of the Hive application. This enables us first to try out our Features relations and make sure that our Feature Model is correct. For example, if we select the **_List_** Functionality Feature, we see that **_Cards_** and **_Like_** Functionality Features are deactivated as those are mutually exclusive (**_List_** and **_Cards_** through their **Only One** relation, **_Like_** is linked to **_Cards_** via a constraint).
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/customization/zoom-flow-display-list-enabled.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/customization/zoom-flow-display-list-enabled.png)
 
 Here we will generate a variant where the Functionality Feature ***Quote*** and ***Suggestion*** are disabled. Regarding the UI of the frontend, we choose a ***List*** display with the ***English*** language. We also provide several new images for the post creation. All used images are available in folder `.mobioos-forge/customization-file-resources` We named this configuration `no-quote-and-suggestion-list-en`.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/customization/configuration.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/customization/configuration.png)
 
 A new project is then created in the `$HOME_DIR/mobioos-forge-customization/` folder with the name we used when creating the configuration. In this folder, we find our customized code. We can, for example, check that the methods that we set as deleted earlier are effectively deleted.
 
 We can also, of course, launch the app and try it out to see the difference and test everything out.
 
-![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Hive-Doc-V3/spl/customization/forge-variant.png)
+![alt text](https://mobioosstorageaccount.blob.core.windows.net/public-documentation/Forge-tutorials/Hive/images/spl/customization/forge-variant.png)
 
 ### Running the backend
 On a terminal, go inside the folder `smartapp/backend/` and run the following command: `dotnet run`
