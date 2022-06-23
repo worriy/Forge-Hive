@@ -4,6 +4,16 @@
             "id": "noCards-List-Without-Cards",
             "content": "cards == null || cards == undefined || cards.length == 0",
             "editorExtension": ".html"
+        },
+        {
+            "id": "false-constant",
+            "content": "false",
+            "editorExtension": ".cs"
+        },
+        {
+            "id": "true-constant",
+            "content": "true",
+            "editorExtension": ".cs"
         }
     ]
 }
