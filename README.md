@@ -407,3 +407,5 @@ In summary, to be able to derivate an application:
 - Finally, derivate the application.
 
 Using the **Mobioos Forge** extension is intuitive and straightforward. Just follow the steps described above, and you can derivate any application.
+
+More variants are available in folder [variants](https://github.com/Mobioos/Forge-Hive/tree/master/variants)

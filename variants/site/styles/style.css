@@ -1,0 +1,25 @@
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img {
+  max-height: 800px !important;
+  width: auto !important;
+}
+
+@media only screen and (max-height: 700px) {
+  img {
+    max-height: 600px !important;
+    width: auto !important;
+  }
+}
+
+a.navbar-item.active {
+  opacity: 50%;
+  pointer-events: none;
+  cursor: default;
+}

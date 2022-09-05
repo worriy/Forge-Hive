@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site/styles/bulma.min.css" />
+    <link rel="stylesheet" href="site/styles/style.css" />
+    <title>Readme</title>
+  </head>
+
+  <body>
+    <div class="container is-fluid my-5">
+      <h1 class="title is-1" style="text-align: center">
+        Implementing Software Product Lines for Enterprise Applications
+      </h1>
+      <hr />
+      <!-- Abstract -->
+      <section class="content">
+        <h1 class="title is-3 my-3">Abstract</h1>
+        <p>
+          Adopting Software Product Lines (SPL) from the beginning, called proactive SPL adoption, is still a major challenge for companies.
+          This paper presents a new tool-supported approach called <span class="italic">Mobioos Forge</span>.
+          <span class="italic">Mobioos Forge</span> revisits the SPL adoption process with a new vision where the idea is to delay activities related to software variability after the application's implementation and coding.
+          In this paper, we illustrate the interest of <span class="italic">Mobioos Forge</span> by considering the challenge related to migrating enterprise applications into SPL.
+          We highlight the obtained feature model and show how features are mapped to the source code. We also illustrate the derivation process to generate the source code of several variants. 
+        </p>
+        <span class="bold">Keywords:</span>
+        <span class="tag">Software Product Lines </span>
+        <span class="tag">Mobioos Forge</span>
+        <span class="tag">Enterprise Applications</span>
+        <span class="tag">Reactive Strategy</span>
+        <span class="tag">Mobile</span>
+      </section>
+
+      <div class="content">
+        <!-- Building and executing a variant -->
+      <section class="content">
+        <h1 class="title is-3 my-3">1. Building and executing a variant</h1>
+        <!-- Tips to build and deploy -->
+        <div>
+          <h1 class="subtitle is-4 mb-3">1.1 Running the backend</h1>
+          <ol>
+            <li>
+              Open a terminal and go to the folder
+              <code>smartapp/backend/</code>
+            </li>
+            <li>Build and run the backend: <code>dotnet run</code></li>
+          </ol>
+          <h1 class="subtitle is-4 mb-3">1.2 Running the frontend</h1>
+          <ol>
+            <li>
+              Open a terminal and go to the folder
+              <code>smartapp/frontend/</code>
+            </li>
+            <li>Install the dependencies: <code>npm i</code></li>
+            <li>Run the frontend: <code>npm start</code></li>
+          </ol>
+          Once the backend and the frontend are up-and-running, go to the client
+          <a href="http://localhost:4200/" target="_blank">localhost address</a
+          >.
+        </div>
+      </section>
+
+      <!-- Variant all features enabled except Lists and French-->
+      <div class="content">
+        <h1 class="title is-3 my-3">
+          2. Variant: All features enabled except
+          <span class="italic">Lists</span> and
+          <span class="italic">French</span>
+        </h1>
+        The first variant introduced here is a variant where all the features
+        are enabled with the exception of <span class="italic">Lists</span> and
+        <span class="italic">French</span> as they are mutually exclusive with
+        <span class="italic">Cards</span> and
+        <span class="italic">English</span>. Regarding the
+        <span class="italic">Primary</span> and
+        <span class="italic">Secondary</span> colors, we decided to use purple
+        colors. Figures 3 and 4 show, respectively, the configuration used to
+        generate the variant and its execution.
+        <h1 class="title is-4">2.1 Configuration</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/all-features-enabled-except-lists-and-french/configuration.png"
+            alt="Configuration of the variant with all features enabled except Lists and French"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.3 </span>Configuration of the variant with all
+          features enabled except <span class="italic">Lists</span> and
+          <span class="italic">French</span>.
+        </p>
+        <h1 class="title is-4">2.2 Snapshot of execution</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/all-features-enabled-except-lists-and-french/execution.gif"
+            alt="Execution of the variant with all features enabled except Lists and French"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.4 </span>Execution of the variant with all
+          features enabled except <span class="italic">Lists</span> and
+          <span class="italic">French</span>.
+        </p>
+        In this variant, the user can create any kind of posts. The flow screen
+        is organized with cards, and the display language is English. The UI of
+        the variant also uses the purple colors as initially provided in the
+        configuration.
+        <h2>
+          <a
+            href="variants/all-features-enabled-except-lists-and-french.zip"
+            >Download source code of the variant "All features enabled except
+            <span class="italic">Lists</span> and
+            <span class="italic">French</span>"</a
+          >
+        </h2>
+      </div>
+
+      <!-- Variant Question, Event, Quote, Like, Cards English enabled -->
+      <div class="content">
+        <h1 class="title is-3 my-3">
+          3. Variant: <span class="italic">Question</span>,
+          <span class="italic">Event</span>
+          <span class="italic">Quote</span> and
+          <span class="italic">Like</span> enabled with
+          <span class="italic">Cards</span> flow and
+          <span class="italic">English</span> display
+        </h1>
+        Similar to the first variant, this variant has the
+        <span class="italic">Cards</span> and
+        <span class="italic">English</span> features enabled. However, the only
+        post types enabled here are <span class="italic">Question</span>,
+        <span class="italic">Event</span> and
+        <span class="italic">Quote</span> as we disabled
+        <span class="italic">Idea</span>, and
+        <span class="italic">Suggestion</span>. The feature
+        <span class="italic">Like</span> is also enabled. Figures 5 and 6 show
+        the configuration and the execution of the described variant.
+        <h1 class="title is-4">3.1 Configuration</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/hive-earth-english-lists-question-event-and-quote-enabled/configuration.png"
+            alt="Configuration of the variant with Question, Event, Quote and Like enabled with Cards flow and English display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.5 </span>Configuration of the variant with
+          <span class="italic">Question</span>,
+          <span class="italic">Event</span>
+          <span class="italic">Quote</span> and
+          <span class="italic">Like</span> enabled with
+          <span class="italic">Cards</span> flow and
+          <span class="italic">English</span> display.
+        </p>
+        <h1 class="title is-4">3.2 Snapshot of execution</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/hive-earth-english-lists-question-event-and-quote-enabled/execution.gif"
+            alt="Execution of the variant with Question, Event, Quote and Like enabled with Cards flow and English display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.6 </span>Execution of the variant with
+          <span class="italic">Question</span>,
+          <span class="italic">Event</span>
+          <span class="italic">Quote</span> and
+          <span class="italic">Like</span> enabled with
+          <span class="italic">Cards</span> flow and
+          <span class="italic">English</span> display.
+        </p>
+        If you run this variant, you will see that
+        <span class="italic">Idea</span> and
+        <span class="italic">Suggestion</span> posts are disabled. You will also
+        notice that the UI now uses the provided colors.
+        <h2>
+          <a
+            href="variants/hive-earth-english-lists-question-event-and-quote-enabled.zip"
+            >Download source code of the variant "<span class="italic"
+              >Question</span
+            >,
+            <span class="italic">Event</span>
+            <span class="italic">Quote</span> and
+            <span class="italic">Like</span> enabled with
+            <span class="italic">Cards</span> flow and
+            <span class="italic">English</span> display."
+          </a>
+        </h2>
+      </div>
+
+      <!-- Variant Idea, Quote, Suggestion, Lists and French enabled -->
+      <div class="content">
+        <h1 class="title is-3 my-3">
+          4. Variant: <span class="italic">Idea</span>,
+          <span class="italic">Quote</span>
+          <span class="italic">Suggestion</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">French</span> display
+        </h1>
+        Unlike the first two variants, this variant has the
+        <span class="italic">Lists</span> and
+        <span class="italic">French</span> features enabled. Here, the only post
+        types enabled are <span class="italic">Idea</span>,
+        <span class="italic">Quote</span> and
+        <span class="italic">Suggestion</span>. We also provided blue shades as
+        colors to be used by the variant. Figures 7 and 8 show the configuration
+        and the execution of the described variant.
+        <h1 class="title is-4">4.1 Configuration</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/apsec-ui-lists-french-idea-quote-and-suggestion-enabled/configuration.png"
+            alt="Configuration of the variant with Idea, Quote and Suggestion enabled with Lists flow and French display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.7 </span>Configuration of the variant with
+          <span class="italic">Idea</span>,
+          <span class="italic">Quote</span>
+          <span class="italic">Suggestion</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">French</span> display.
+        </p>
+        <h1 class="title is-4">4.2 Snapshot of execution</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/apsec-ui-lists-french-idea-quote-and-suggestion-enabled/execution.gif"
+            alt="Execution of the variant with Idea, Quote and Suggestion enabled with Lists flow and French display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.8 </span>Execution of the variant with
+          <span class="italic">Idea</span>,
+          <span class="italic">Quote</span>
+          <span class="italic">Suggestion</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">French</span> display.
+        </p>
+        By running the variant, you will be able to create
+        <span class="italic">Ideas</span>,
+        <span class="italic">Quotes</span> and
+        <span class="italic">Suggestions</span>. Also, you will notice a flow
+        screen organized with <span class="italic">Lists</span> and that the UI
+        language is now French.
+        <h2>
+          <a
+            href="variants/apsec-ui-lists-french-idea-quote-and-suggestion-enabled.zip"
+            >Download source code of the variant "<span class="italic"
+              >Idea</span
+            >,
+            <span class="italic">Quote</span>
+            <span class="italic">Suggestion</span> enabled with
+            <span class="italic">Lists</span> flow and
+            <span class="italic">French</span> display."
+          </a>
+        </h2>
+      </div>
+
+      <!-- Variant Question, Event,  Lists and French enabled -->
+      <div class="content">
+        <h1 class="title is-3 my-3">
+          5. Variant: <span class="italic">Question</span> and
+          <span class="italic">Event</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">English</span> display
+        </h1>
+        This following variant has the
+        <span class="italic">Lists</span> and
+        <span class="italic">English</span> features enabled. Concerning its
+        post types, the only enabled here are
+        <span class="italic">Question</span> and
+        <span class="italic">Event</span>. Figures 9 and 10 show the
+        configuration and the execution of the described variant.
+        <h1 class="title is-4">5.1 Configuration</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/mf-ui-lists-english-question-and-event-enabled/configuration.png"
+            alt="Configuration of the variant with Question and Event enabled with Lists flow and English display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.9 </span>Configuration of the variant with
+          <span class="italic">Question</span> and
+          <span class="italic">Event</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">English</span> display.
+        </p>
+        <h1 class="title is-4">5.2 Snapshot of execution</h1>
+        <figure class="image my-0">
+          <img
+            src="site/images/mf-ui-lists-english-question-and-event-enabled/execution.gif"
+            alt="Execution of the variant with Question and Event enabled with Lists flow and English display"
+          />
+        </figure>
+        <p style="text-align: center">
+          <span class="bold">Fig.10 </span>Execution of the variant with
+          <span class="italic">Question</span> and
+          <span class="italic">Event</span> enabled with
+          <span class="italic">Lists</span> flow and
+          <span class="italic">English</span> display.
+        </p>
+        If you run this variant, you will only be able to create
+        <span class="italic">Questions</span> and
+        <span class="italic">Events</span>. Here we provided shades of orange as
+        the <span class="italic">Primary</span> and
+        <span class="italic">Secondary</span> colors.
+        <h2>
+          <a
+            href="variants/mf-ui-lists-english-question-and-event-enabled.zip"
+            >Download source code of the variant "<span class="italic"
+              >Question</span
+            >
+            and <span class="italic">Event</span> enabled with
+            <span class="italic">Lists</span> flow and
+            <span class="italic">English</span> display."
+          </a>
+        </h2>
+      </div>
+    </div>
+    <script src="./site/scripts/script.js"></script>
+  </body>
+</html>
